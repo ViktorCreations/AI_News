@@ -52,6 +52,19 @@ commits the issue. If you are that session, follow the process below exactly.
 - [Headline](link) — a few words of context.
 ```
 
+## Link rules (strict — a wrong link is worse than no story)
+
+- **Verify every link before publishing**: fetch each URL (web fetch) and confirm
+  the page actually covers the story it's cited for. If it doesn't, find a
+  better source or drop the story.
+- **Never link rolling aggregator or list pages** (news roundups, "latest deals"
+  trackers, leaderboard/news feeds like `.../ai-news`, `.../latest-vc-deals`,
+  weekly "biggest rounds" posts). Their content changes daily, so the link rots
+  immediately. Link a dated, single-story article instead.
+- **Prefer primary sources**: the company's own announcement/blog post, the
+  paper, or the official press release; otherwise a dated article from a
+  reputable outlet.
+
 ## Style rules
 
 - Concise beats complete: the whole issue should be readable in ~3 minutes.
