@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-*First issue coming soon.*
+**[July 18, 2026](newsletters/2026-07-18.md)** — Gemini 3.5 Pro launches as Moonshot's open-weight Kimi K3 lands and Xi opens the World AI Conference.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-07-18 | [Read](newsletters/2026-07-18.md) | Google launches Gemini 3.5 Pro after a ground-up rebuild |
 
 ## How it works
 
