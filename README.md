@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[July 18, 2026](newsletters/2026-07-18.md)** — Moonshot's 2.8T open-weight Kimi K3 lands as Xi opens the World AI Conference.
+**[July 19, 2026](newsletters/2026-07-19.md)** — Anthropic reportedly in talks for $10B of Meta compute as Apple briefly passes Nvidia.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-07-19 | [Read](newsletters/2026-07-19.md) | Anthropic in talks to lease up to $10B of Meta computing power |
 | 2026-07-18 | [Read](newsletters/2026-07-18.md) | Moonshot releases Kimi K3, a 2.8T-parameter open-weight frontier model |
 
 ## How it works
