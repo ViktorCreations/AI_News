@@ -20,9 +20,12 @@ commits the issue. If you are that session, follow the process below exactly.
    by multiple outlets — link the best single source.
 3. **Write the issue** to `newsletters/YYYY-MM-DD.md` (today's date, UTC).
    If the file already exists, overwrite it.
-4. **Update the index in `README.md`**: set the "Latest issue" link and add a
+4. **Fact-check the draft (mandatory — run the `fact-check` skill).** Every
+   claim in the issue must survive verification before publishing. A story
+   that fails is removed, not softened. See "Fact-checking rules" below.
+5. **Update the index in `README.md`**: set the "Latest issue" link and add a
    row to the top of the Archive table.
-5. **Commit and push** to the repository's default branch with the message
+6. **Commit and push** to the repository's default branch with the message
    `Newsletter: YYYY-MM-DD`.
 
 ## Issue format
@@ -52,6 +55,37 @@ commits the issue. If you are that session, follow the process below exactly.
 - [Headline](link) — a few words of context.
 ```
 
+## Fact-checking rules (strict — a false story is worse than no issue)
+
+A published error already happened once: an issue led with "Google launches
+Gemini 3.5 Pro" sourced from SEO articles speculating about a *rumored* launch
+date. Google had launched nothing. These rules exist so that never repeats.
+
+- **Verify the event, not just the link.** For every launch/release/funding
+  claim, confirm it on a primary source (the company's own blog, changelog,
+  press release, or paper) before publishing. "An article says X happened" is
+  not confirmation that X happened.
+- **The primary-source test for launches**: if a company supposedly shipped
+  something and there is no trace on the company's own site, the story is
+  false or premature — drop it.
+- **Rumor-pattern kill list.** Never source a story from pages matching these
+  patterns; their presence is a red flag for the whole story:
+  - "What to expect", "release date: everything we know", "rumors & leaks",
+    "targets \<date\>", "(Updated \<month\>)" evergreen-SEO pages
+  - Local-news or content-farm domains covering global tech (e.g. a regional
+    outlet "reporting" a Google launch)
+  - Prediction/aggregator sites (coursiv, cometapi, findskill-style blogs)
+- **Cross-check numbers.** Parameter counts, valuations, round sizes, dates:
+  confirm the number appears in the cited source itself, not just somewhere.
+- **Future-dated ≠ happened.** "X is expected/slated/targeted for \<date\>"
+  never becomes "X launched" — even if the date has passed. Only report a
+  launch after confirming it occurred.
+- **The header date must be right**: the day-of-week must match the date, and
+  the date must be today (UTC).
+- **If a published issue is later found wrong**: fix the story (usually remove
+  it), update README lines that reference it, and append a dated *Correction*
+  note at the bottom of the issue. Never silently rewrite history.
+
 ## Link rules (strict — a wrong link is worse than no story)
 
 - **Verify every link before publishing**: fetch each URL (web fetch) and confirm
@@ -80,3 +114,18 @@ commits the issue. If you are that session, follow the process below exactly.
 - The line after `<!-- latest -->` holds the link to the newest issue.
 - New archive rows go directly under `<!-- archive -->` (newest first), as
   `| YYYY-MM-DD | [Read](newsletters/YYYY-MM-DD.md) | one-line top story |`.
+
+## Project skills & operations
+
+Project skills live in `.claude/skills/` (invoke with `/<name>`):
+
+- `onboard` — start here in any fresh session: loads full project expertise
+  (editorial craft, architecture, constraints).
+- `fact-check` — the mandatory pre-publish verification pass (step 4 above).
+- `handoff` — write durable session state to `.claude/state/HANDOFF.md` before
+  compaction or ending a work session mid-task.
+- `resume` — restore state from the handoff file when continuing work.
+
+`docs/OPERATIONS.md` is the runbook for the automation itself: the scheduled
+routines, their IDs and schedules, failure modes, and recovery steps. Read it
+before touching any routine, and update it whenever a routine changes.
