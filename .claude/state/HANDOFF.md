@@ -1,11 +1,16 @@
-# Session handoff — 2026-07-19 03:10 UTC
+# Session handoff — 2026-07-19 18:15 UTC
 
 ## Current task
-Project-hardening pass: **done**. Fixed the fabricated "Gemini 3.5 Pro
-launch" story in `newsletters/2026-07-18.md` (correction note appended, README
-updated), added mandatory fact-checking to CLAUDE.md, created project skills
-(`onboard`, `fact-check`, `handoff`, `resume`), and wrote
-`docs/OPERATIONS.md`. No work in flight.
+2026-07-19 issue: **published, expanded to 12 items, and emailed via Zoho**.
+Email architecture reworked: routine notification email proven undelivered
+(both scheduled 11:15 UTC fire and manual 16:42 UTC re-fire produced no
+email); Zoho Mail connector added by owner and verified working (test email
+received). CLAUDE.md now has step 7 (Zoho email via
+`scripts/md2email.py` + `ZohoMail_sendEmail`); story target raised to
+~12–15 per owner request. **Watch item: tomorrow's 11:00 UTC publish run
+must confirm the Zoho connector loads in a headless scheduled fire** — if it
+does, delete the deprecated relay routine `trig_01GbxBCjF5dZrHiwk6MjbgPD`
+and update OPERATIONS.md; if not, email manually and rethink delivery.
 
 ## Routine registry (live state, verify on resume)
 | Routine | Trigger ID | Cron (UTC) | Binding | Notifications |
@@ -17,8 +22,11 @@ updated), added mandatory fact-checking to CLAUDE.md, created project skills
 - Routines only; no Anthropic API key, no paid credits, no GitHub Actions AI
   pipeline (user has no key and won't pay per-token).
 - Default branch is `main`; publish pushes straight to it, no PRs.
-- Relay must echo the published issue verbatim (email == repo), never
-  re-research.
+- Email == published issue, byte-for-byte in content; sent via Zoho Mail
+  connector at the end of the publish run (NOT routine notifications —
+  proven undelivered 2026-07-19).
+- Issue size target ~12–15 stories (owner request 2026-07-19); widen the net
+  on slow days rather than shorten.
 - Repo is public: no secrets or personal data in committed files.
 - Fact-check pass is mandatory before every publish (CLAUDE.md step 4).
 - The "fable trailer history rewrite" idea was explicitly cancelled by the

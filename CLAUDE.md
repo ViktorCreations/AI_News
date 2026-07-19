@@ -15,9 +15,13 @@ commits the issue. If you are that session, follow the process below exactly.
      regulation and policy
    - Research: notable new papers, benchmarks, open-source model releases
    - Community: what's trending on Hacker News about AI/LLMs
-2. **Select the ~10 most important stories.** Prefer primary sources. Skip
-   rumors, reposts, and incremental minor updates. Deduplicate stories covered
-   by multiple outlets — link the best single source.
+2. **Select the ~12–15 most important stories** (owner preference: a fuller
+   issue beats a minimal one). Prefer primary sources. Skip rumors, reposts,
+   and incremental minor updates. Deduplicate stories covered by multiple
+   outlets — link the best single source. On slow days widen the net —
+   research papers, policy, embodied AI/robotics, community items, and
+   well-dated context for running stories — before shortening the issue;
+   never fill the quota with unverifiable or stale-as-new items.
 3. **Write the issue** to `newsletters/YYYY-MM-DD.md` (today's date, UTC).
    If the file already exists, overwrite it.
 4. **Fact-check the draft (mandatory — run the `fact-check` skill).** Every
@@ -27,6 +31,16 @@ commits the issue. If you are that session, follow the process below exactly.
    row to the top of the Archive table.
 6. **Commit and push** to the repository's default branch with the message
    `Newsletter: YYYY-MM-DD`.
+7. **Email the issue via the Zoho Mail connector** (tools
+   `mcp__ZohoMCP__ZohoMail_*`, load via ToolSearch): convert the issue
+   markdown to simple inline-styled HTML with
+   `python3 scripts/md2email.py newsletters/YYYY-MM-DD.md`, then send
+   with `sendEmail` from the Zoho account (accountId and fromAddress via
+   `getMailAccounts`) to the owner's gmail, subject
+   `AI News — <Weekday>, <Month> <D>, <YYYY>`, mailFormat `html`. The email
+   body must be the published issue, byte-for-byte in content. If the Zoho
+   tools are unavailable in this run, still publish steps 1–6 and note the
+   email failure in the run summary.
 
 ## Issue format
 
@@ -105,7 +119,8 @@ date. Google had launched nothing. These rules exist so that never repeats.
 - Every item links to its source. No item without a link.
 - Neutral, factual tone. No breathless hype, no editorializing beyond the
   editor's note.
-- If it's a genuinely slow news day, a shorter issue is fine — never pad.
+- If it's a genuinely slow news day, widen the net (step 2) before shortening;
+  a somewhat shorter issue is a last resort — never pad with weak items.
 
 ## README index format
 

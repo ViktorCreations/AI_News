@@ -15,14 +15,17 @@ single research pass feeds both the repo and the email:
                                     Claude Code session with git auth.
                                     Follows CLAUDE.md: research → write →
                                     fact-check → update README → commit
-                                    "Newsletter: YYYY-MM-DD" → push to main.
-07:15 local (11:15 UTC)  RELAY    — fresh-session routine with email
-                                    notifications on. Fetches the published
-                                    issue from the public raw URL and outputs
-                                    it verbatim as its final message = the
-                                    email body. Never researches, never
-                                    commits. Falls back to the newest issue
-                                    (with a note) if today's 404s.
+                                    "Newsletter: YYYY-MM-DD" → push to main
+                                    → email the issue via the Zoho Mail
+                                    connector (scripts/md2email.py → HTML →
+                                    ZohoMail_sendEmail to the owner's gmail).
+07:15 local (11:15 UTC)  RELAY    — DEPRECATED fallback (see below). Fresh-
+                                    session routine with email notifications
+                                    on; its notification-based email was
+                                    proven undelivered on 2026-07-19, so it
+                                    is not a real delivery path. Scheduled
+                                    for deletion once the Zoho email step
+                                    succeeds in a scheduled (headless) run.
 ```
 
 Design invariants:
@@ -38,7 +41,7 @@ Design invariants:
 | Routine | Trigger ID | Cron (UTC) | Binding | Notifications |
 |---|---|---|---|---|
 | Daily AI newsletter (publish) | `trig_013uwjDfce9Eu4RkFBEmFkfQ` | `0 11 * * *` | session-bound → `session_01JHEXp6dpeg5hK3DQGdj4eK` | none (server rejects notifications on session-bound routines) |
-| Daily AI newsletter — email (relay) | `trig_01GbxBCjF5dZrHiwk6MjbgPD` | `15 11 * * *` | fresh session per fire, environment `env_01HPAanz6q11rUSsDu3MubpC` | email on, push off |
+| Daily AI newsletter — email (relay, DEPRECATED) | `trig_01GbxBCjF5dZrHiwk6MjbgPD` | `15 11 * * *` | fresh session per fire, environment `env_01HPAanz6q11rUSsDu3MubpC` | email on, push off — never delivers; delete after Zoho step proves out headless |
 
 (A spent one-shot `send_later` trigger from initial setup may also appear in
 `list_triggers` with `ended_reason: run_once_fired` — inert, ignorable.)
@@ -81,9 +84,22 @@ Check: `git log origin/main --oneline -3` for today's `Newsletter:` commit.
 
 ### 2. Email didn't arrive
 
-Check `list_triggers`: relay enabled, `next_run_at` sane, notifications
-`email: true`. Remember notifications only work on fresh-session routines —
-if the relay was ever recreated session-bound, that's the bug.
+Delivery is the Zoho Mail step at the end of the publish run (CLAUDE.md
+step 7), NOT platform notifications — routine notification email was tested
+2026-07-19 and never delivered (the platform's "noteworthy" heuristic is not
+a reliable channel; the relay routine exists only as a deprecated vestige).
+
+- Check the publish session's run: did the Zoho `mcp__ZohoMCP__*` tools load?
+  Connectors are interactively authenticated and **may be absent in headless
+  scheduled fires** — if so, the run should have noted the email failure in
+  its summary. Re-send manually from a live session: `python3
+  scripts/md2email.py newsletters/YYYY-MM-DD.md`, then `ZohoMail_sendEmail`
+  (fromAddress `viktor.lanovliuk@zohomail.com`, accountId via
+  `getMailAccounts`, mailFormat `html`).
+- If Zoho auth expired, the user must re-authenticate the connector in the
+  claude.ai connector settings.
+- Sender reputation: mail comes from a fresh zohomail.com address — check
+  the gmail spam folder and mark "Not spam".
 
 ### 3. A published issue contains a factual error
 
@@ -109,5 +125,10 @@ publish ≥15 minutes ahead of relay, and update the registry table here.
 
 - Routines only — **no API key, no paid credits, no GitHub Actions pipeline**.
 - Default branch is `main`; newsletters push straight to it, no PRs.
-- One research pass per day: relay must never re-research or paraphrase.
-- Email delivery at ~7:15am local via routine notification email.
+- One research pass per day; the emailed issue must match the published file
+  byte-for-byte in content.
+- Email delivery via the Zoho Mail connector at the end of the publish run
+  (from `viktor.lanovliuk@zohomail.com` to the owner's gmail), not via
+  routine notifications — those were proven undelivered 2026-07-19.
+- Issue size target is ~12–15 stories (owner request, 2026-07-19): widen the
+  net on slow days rather than shorten.
