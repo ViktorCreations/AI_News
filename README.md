@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[July 19, 2026](newsletters/2026-07-19.md)** — Anthropic reportedly in talks for $10B of Meta compute as Apple briefly passes Nvidia.
+**[July 20, 2026](newsletters/2026-07-20.md)** — Hugging Face discloses an AI-agent-executed breach as WAIC closes and the EU pries Android open.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-07-20 | [Read](newsletters/2026-07-20.md) | Hugging Face discloses a breach carried out by an autonomous AI agent |
 | 2026-07-19 | [Read](newsletters/2026-07-19.md) | Anthropic in talks to lease up to $10B of Meta computing power |
 | 2026-07-18 | [Read](newsletters/2026-07-18.md) | Moonshot releases Kimi K3, a 2.8T-parameter open-weight frontier model |
 
