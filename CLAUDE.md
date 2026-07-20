@@ -22,6 +22,14 @@ commits the issue. If you are that session, follow the process below exactly.
    research papers, policy, embodied AI/robotics, community items, and
    well-dated context for running stories — before shortening the issue;
    never fill the quota with unverifiable or stale-as-new items.
+   **No-repeat rule**: before selecting, read the last 7 issues in
+   `newsletters/` (and grep them for each candidate's company/product
+   names). A story covered in a prior issue may return ONLY if there is a
+   genuinely new development — and then the item must lead with the delta
+   ("weights released, as promised July 18", "the talks reported Sunday
+   have closed") and link a source for the new event, not the old one.
+   Aggregator roundups constantly re-surface old news as fresh; a date on
+   the event itself, not on the article, is what counts.
 3. **Write the issue** to `newsletters/YYYY-MM-DD.md` (today's date, UTC).
    If the file already exists, overwrite it.
 4. **Fact-check the draft (mandatory — run the `fact-check` skill).** Every

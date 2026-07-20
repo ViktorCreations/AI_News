@@ -56,6 +56,20 @@ the item even if the story itself is real.
 - The link is a dated, single-story page — never a rolling aggregator.
 - Prefer swapping in the primary source if the check surfaced one.
 
+### 5. No-repeat check (against our own archive)
+
+- Grep prior issues for the item's key entities:
+  `grep -il "<company/product>" newsletters/*.md` (excluding today).
+- If a prior issue covered the same event: **kill the item** — re-reporting
+  our own archive is padding.
+- If a prior issue covered the same *story* but this item is a genuinely
+  new development: keep it, but the text must lead with the delta and date
+  the new event ("as promised in the July 18 launch, the weights are now
+  live"). An update that doesn't name what changed gets killed.
+- Two sanctioned exceptions, both requiring explicit labeling:
+  a dated *"Catching up"* item for pre-newsletter or missed major events,
+  and *context* items that support a fresh top story (marked "Context:").
+
 ## Issue-level checks (after the per-item pass)
 
 - Header: day-of-week matches the date; date is today (UTC); title format
