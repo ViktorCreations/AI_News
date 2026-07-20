@@ -90,12 +90,18 @@ step 7), NOT platform notifications — routine notification email was tested
 a reliable channel; the relay routine exists only as a deprecated vestige).
 
 - Check the publish session's run: did the Zoho `mcp__ZohoMCP__*` tools load?
-  Connectors are interactively authenticated and **may be absent in headless
-  scheduled fires** — if so, the run should have noted the email failure in
-  its summary. Re-send manually from a live session: `python3
-  scripts/md2email.py newsletters/YYYY-MM-DD.md`, then `ZohoMail_sendEmail`
-  (fromAddress `viktor.lanovliuk@zohomail.com`, accountId via
-  `getMailAccounts`, mailFormat `html`).
+  **Confirmed 2026-07-20: the Zoho connector does NOT load in headless
+  scheduled fires** (it requires the owner's interactive claude.ai client).
+  Until a headless path exists, scheduled runs publish but cannot email; the
+  run summary notes the failure. Re-send manually from a live session:
+  `python3 scripts/md2email.py newsletters/YYYY-MM-DD.md`, then
+  `ZohoMail_sendEmail` (fromAddress `viktor.lanovliuk@zohomail.com`,
+  accountId via `getMailAccounts`, mailFormat `html`).
+- **Planned fix (needs owner action)**: create a Zoho app-specific password
+  and store it in the Claude Code environment as a secret env var (e.g.
+  `ZOHO_SMTP_PASS` — never in the repo); the publish run then sends via
+  Zoho SMTP (`smtps://smtp.zoho.com:465`, user
+  `viktor.lanovliuk@zohomail.com`) with curl, which works headless.
 - If Zoho auth expired, the user must re-authenticate the connector in the
   claude.ai connector settings.
 - Sender reputation: mail comes from a fresh zohomail.com address — check

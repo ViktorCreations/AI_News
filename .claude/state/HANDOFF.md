@@ -7,10 +7,14 @@ Email architecture reworked: routine notification email proven undelivered
 email); Zoho Mail connector added by owner and verified working (test email
 received). CLAUDE.md now has step 7 (Zoho email via
 `scripts/md2email.py` + `ZohoMail_sendEmail`); story target raised to
-~12–15 per owner request. **Watch item: tomorrow's 11:00 UTC publish run
-must confirm the Zoho connector loads in a headless scheduled fire** — if it
-does, delete the deprecated relay routine `trig_01GbxBCjF5dZrHiwk6MjbgPD`
-and update OPERATIONS.md; if not, email manually and rethink delivery.
+~12–15 per owner request. **RESOLVED 2026-07-20: the Zoho connector does
+NOT load in headless scheduled fires** — the 07-20 run published (commit
+26fe272, 11 items + a correction to 07-19's GPT-5.6 item) but could not
+email. Next action: owner to create a Zoho app-specific password and store
+it as env secret `ZOHO_SMTP_PASS` in the environment; then the publish run
+emails via SMTP with curl (see OPERATIONS.md §2) and the deprecated relay
+routine `trig_01GbxBCjF5dZrHiwk6MjbgPD` can be deleted. Until then, email
+the issue manually from any live session with the Zoho connector.
 
 ## Routine registry (live state, verify on resume)
 | Routine | Trigger ID | Cron (UTC) | Binding | Notifications |
