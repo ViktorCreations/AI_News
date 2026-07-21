@@ -72,6 +72,14 @@ commits the issue. If you are that session, follow the process below exactly.
 
 - **[Item](link)** — one sentence.
 
+## Compute & Data Centers
+
+- **[Item](link)** — one sentence (capacity, hardware, location, timeline).
+
+## Regulation & Policy
+
+- **[Item](link)** — one sentence (who ordered/proposed what, scope, deadlines).
+
 ## Capital & Deals
 
 - **[Item](link)** — one sentence (round size, valuation, acquirer/target, key terms).
@@ -81,17 +89,29 @@ commits the issue. If you are that session, follow the process below exactly.
 - [Headline](link) — a few words of context.
 ```
 
-**Capital & Deals rules**: every money-led story — funding rounds, M&A,
-IPOs, valuations, market-cap moves, and infrastructure/compute deals whose
-substance is the contract value — goes in this section and ONLY here, capped
-at the **top 5** by importance (drop the rest, don't overflow into other
-sections). Top Stories, Research & Models, Product & Industry, and Quick
-Hits are reserved for product, research, policy, security, and community
-news. Judgment call: if the money is incidental to a strategic or product
-event (e.g. a partnership whose point is the technology), the story may
-live elsewhere with the figure mentioned in passing; if the number IS the
-story, it's Capital & Deals. Omit the section on days with no qualifying
-items.
+**Thematic section rules** (Compute & Data Centers, Regulation & Policy,
+Capital & Deals): each is the EXCLUSIVE home for its beat, capped at the
+**top 5** by importance — drop the rest, never overflow into other
+sections. Omit any section with no fresh qualifying items.
+
+- **Capital & Deals**: every money-led story — funding rounds, M&A, IPOs,
+  valuations, market-cap moves, and deals whose substance is the contract
+  value.
+- **Regulation & Policy**: government and regulatory action — legislation,
+  binding orders, export controls, standards/oversight bodies, government
+  model reviews, intergovernmental AI organizations.
+- **Compute & Data Centers**: the physical buildout — data-center
+  construction and capacity milestones, chip/fab news, AI supercomputer
+  deployments, energy for AI. (If the story is the deal value, it goes to
+  Capital & Deals instead; if it's regulatory action about chips, it goes
+  to Regulation & Policy.)
+
+Top Stories, Research & Models, Product & Industry, and Quick Hits carry
+the rest: product/model launches, research, security, community. Judgment
+call: when money or policy is incidental to a strategic/product event, the
+story may live elsewhere with the fact mentioned in passing. On days when
+the thematic sections absorb most of the news, fewer than 3 Top Stories is
+acceptable.
 
 ## Fact-checking rules (strict — a false story is worse than no issue)
 
