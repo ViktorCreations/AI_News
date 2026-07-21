@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[July 20, 2026](newsletters/2026-07-20.md)** — Hugging Face discloses an AI-agent-executed breach as WAIC closes and the EU pries Android open.
+**[July 21, 2026](newsletters/2026-07-21.md)** — Moonshot runs out of GPUs for Kimi K3 as the AI buildout hits new records and Washington weighs a model watchdog.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-07-21 | [Read](newsletters/2026-07-21.md) | Moonshot pauses new Kimi K3 subscriptions after demand maxes out its GPUs |
 | 2026-07-20 | [Read](newsletters/2026-07-20.md) | Hugging Face discloses a breach carried out by an autonomous AI agent |
 | 2026-07-19 | [Read](newsletters/2026-07-19.md) | Anthropic in talks to lease up to $10B of Meta computing power |
 | 2026-07-18 | [Read](newsletters/2026-07-18.md) | Moonshot releases Kimi K3, a 2.8T-parameter open-weight frontier model |
