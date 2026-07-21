@@ -14,7 +14,10 @@ Input: a draft at `newsletters/YYYY-MM-DD.md` (or a published issue to audit).
 ## Process
 
 Work through the issue item by item — every Top Story, Research item, Product
-item, and Quick Hit. For each item, do all four checks:
+item, Capital & Deals item, and Quick Hit. For each item, do all four checks
+(plus the no-repeat check). Also verify section placement: money-led stories
+(rounds, M&A, IPOs, valuations, deal-value contracts) belong in Capital &
+Deals, capped at 5 — flag any that leaked into other sections.
 
 ### 1. Event check (did it actually happen?)
 

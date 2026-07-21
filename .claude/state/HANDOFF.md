@@ -31,6 +31,9 @@ the issue manually from any live session with the Zoho connector.
   proven undelivered 2026-07-19).
 - Issue size target ~12–15 stories (owner request 2026-07-19); widen the net
   on slow days rather than shorten.
+- Money-led stories (rounds, M&A, IPOs, valuations, deal-value contracts)
+  live ONLY in the "Capital & Deals" section, top 5 max (owner request
+  2026-07-21); other sections are for product/research/policy/security news.
 - Repo is public: no secrets or personal data in committed files.
 - Fact-check pass is mandatory before every publish (CLAUDE.md step 4).
 - The "fable trailer history rewrite" idea was explicitly cancelled by the

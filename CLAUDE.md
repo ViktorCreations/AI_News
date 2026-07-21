@@ -72,10 +72,26 @@ commits the issue. If you are that session, follow the process below exactly.
 
 - **[Item](link)** — one sentence.
 
+## Capital & Deals
+
+- **[Item](link)** — one sentence (round size, valuation, acquirer/target, key terms).
+
 ## Quick Hits
 
 - [Headline](link) — a few words of context.
 ```
+
+**Capital & Deals rules**: every money-led story — funding rounds, M&A,
+IPOs, valuations, market-cap moves, and infrastructure/compute deals whose
+substance is the contract value — goes in this section and ONLY here, capped
+at the **top 5** by importance (drop the rest, don't overflow into other
+sections). Top Stories, Research & Models, Product & Industry, and Quick
+Hits are reserved for product, research, policy, security, and community
+news. Judgment call: if the money is incidental to a strategic or product
+event (e.g. a partnership whose point is the technology), the story may
+live elsewhere with the figure mentioned in passing; if the number IS the
+story, it's Capital & Deals. Omit the section on days with no qualifying
+items.
 
 ## Fact-checking rules (strict — a false story is worse than no issue)
 
