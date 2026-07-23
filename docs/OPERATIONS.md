@@ -89,19 +89,25 @@ step 7), NOT platform notifications — routine notification email was tested
 2026-07-19 and never delivered (the platform's "noteworthy" heuristic is not
 a reliable channel; the relay routine exists only as a deprecated vestige).
 
-- Check the publish session's run: did the Zoho `mcp__ZohoMCP__*` tools load?
-  **Confirmed 2026-07-20: the Zoho connector does NOT load in headless
-  scheduled fires** (it requires the owner's interactive claude.ai client).
-  Until a headless path exists, scheduled runs publish but cannot email; the
-  run summary notes the failure. Re-send manually from a live session:
-  `python3 scripts/md2email.py newsletters/YYYY-MM-DD.md`, then
-  `ZohoMail_sendEmail` (fromAddress `viktor.lanovliuk@zohomail.com`,
-  accountId via `getMailAccounts`, mailFormat `html`).
-- **Planned fix (needs owner action)**: create a Zoho app-specific password
-  and store it in the Claude Code environment as a secret env var (e.g.
-  `ZOHO_SMTP_PASS` — never in the repo); the publish run then sends via
-  Zoho SMTP (`smtps://smtp.zoho.com:465`, user
-  `viktor.lanovliuk@zohomail.com`) with curl, which works headless.
+- **Primary path (headless-capable)**: `scripts/zoho_send.sh
+  newsletters/YYYY-MM-DD.md` sends via the Zoho Mail REST API over HTTPS
+  using OAuth credentials in `~/.zoho_mail_api` (mode 600, OUTSIDE the repo
+  — never commit it). The file holds CLIENT_ID / CLIENT_SECRET /
+  REFRESH_TOKEN from a Zoho **Self Client** (api-console.zoho.com, scope
+  `ZohoMail.messages.CREATE,ZohoMail.accounts.READ`); the script exchanges
+  a one-time GRANT_CODE for the permanent refresh token on first run.
+- **Why not SMTP**: tested 2026-07-22 — the egress proxy only passes
+  HTTPS; smtp.zoho.com:465 is reset and :587 times out. App passwords are
+  useless here; only the HTTPS REST API works headless.
+- **Why not the connector**: confirmed 2026-07-20 — `mcp__ZohoMCP__*` tools
+  do NOT load in headless scheduled fires (they need the owner's
+  interactive claude.ai client). Connector remains the fallback for manual
+  re-sends from live sessions.
+- **If email fails**: check `~/.zoho_mail_api` exists and has REFRESH_TOKEN
+  (container reclaim DELETES it — the file must be re-created from the
+  template in this section and re-authorized with a fresh grant code, since
+  it lives outside git). Then check the script's error output (token
+  refresh vs send step).
 - If Zoho auth expired, the user must re-authenticate the connector in the
   claude.ai connector settings.
 - Sender reputation: mail comes from a fresh zohomail.com address — check

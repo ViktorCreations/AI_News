@@ -11,10 +11,16 @@ received). CLAUDE.md now has step 7 (Zoho email via
 NOT load in headless scheduled fires** — the 07-20 run published (commit
 26fe272, 11 items + a correction to 07-19's GPT-5.6 item) but could not
 email. Next action: owner to create a Zoho app-specific password and store
-it as env secret `ZOHO_SMTP_PASS` in the environment; then the publish run
-emails via SMTP with curl (see OPERATIONS.md §2) and the deprecated relay
-routine `trig_01GbxBCjF5dZrHiwk6MjbgPD` can be deleted. Until then, email
-the issue manually from any live session with the Zoho connector.
+it as env secret `ZOHO_SMTP_PASS` in the environment. **SUPERSEDED
+2026-07-22: SMTP is blocked by the egress proxy (465 reset / 587 timeout,
+tested); new mechanism is `scripts/zoho_send.sh` → Zoho Mail REST API over
+HTTPS with OAuth creds in `~/.zoho_mail_api` (template created, mode 600,
+outside repo). Waiting on owner to fill CLIENT_ID/CLIENT_SECRET/GRANT_CODE
+from a Zoho Self Client (api-console.zoho.com); on their go-ahead run the
+script once to exchange the grant code, then test-send. After a successful
+scheduled-run send, delete the deprecated relay routine
+`trig_01GbxBCjF5dZrHiwk6MjbgPD`. Caveat: container reclaim deletes the
+cred file — recovery recipe in OPERATIONS.md §2.**
 
 ## Routine registry (live state, verify on resume)
 | Routine | Trigger ID | Cron (UTC) | Binding | Notifications |

@@ -39,16 +39,16 @@ commits the issue. If you are that session, follow the process below exactly.
    row to the top of the Archive table.
 6. **Commit and push** to the repository's default branch with the message
    `Newsletter: YYYY-MM-DD`.
-7. **Email the issue via the Zoho Mail connector** (tools
-   `mcp__ZohoMCP__ZohoMail_*`, load via ToolSearch): convert the issue
-   markdown to simple inline-styled HTML with
-   `python3 scripts/md2email.py newsletters/YYYY-MM-DD.md`, then send
-   with `sendEmail` from the Zoho account (accountId and fromAddress via
-   `getMailAccounts`) to the owner's gmail, subject
-   `AI News — <Weekday>, <Month> <D>, <YYYY>`, mailFormat `html`. The email
-   body must be the published issue, byte-for-byte in content. If the Zoho
-   tools are unavailable in this run, still publish steps 1–6 and note the
-   email failure in the run summary.
+7. **Email the issue**: run
+   `scripts/zoho_send.sh newsletters/YYYY-MM-DD.md` — it converts the issue
+   to HTML (via `scripts/md2email.py`) and sends it through the Zoho Mail
+   REST API using OAuth credentials in `~/.zoho_mail_api` (outside the
+   repo; see `docs/OPERATIONS.md` for setup/recovery). The email body must
+   be the published issue, byte-for-byte in content. Fallback if the script
+   fails: the Zoho Mail connector tools (`mcp__ZohoMCP__ZohoMail_*` via
+   ToolSearch) when available in an interactive session. If neither path
+   works, still publish steps 1–6 and note the email failure in the run
+   summary.
 
 ## Issue format
 
