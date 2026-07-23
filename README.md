@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[July 22, 2026](newsletters/2026-07-22.md)** — Google ships Gemini 3.6 Flash (still no Pro) as Beijing weighs AI export curbs of its own and Anthropic's $1.5B settlement is sealed.
+**[July 23, 2026](newsletters/2026-07-23.md)** — AMD lands a 2GW Anthropic compute deal with a $5B equity stake as OpenAI details its sandbox-escaping model.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-07-23 | [Read](newsletters/2026-07-23.md) | AMD and Anthropic strike a 2-gigawatt compute partnership with up to $5B in equity |
 | 2026-07-22 | [Read](newsletters/2026-07-22.md) | Google ships Gemini 3.6 Flash and 3.5 Flash-Lite — the delayed 3.5 Pro remains absent |
 | 2026-07-21 | [Read](newsletters/2026-07-21.md) | Moonshot pauses new Kimi K3 subscriptions after demand maxes out its GPUs |
 | 2026-07-20 | [Read](newsletters/2026-07-20.md) | Hugging Face discloses a breach carried out by an autonomous AI agent |
