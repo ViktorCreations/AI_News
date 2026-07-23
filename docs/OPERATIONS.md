@@ -7,8 +7,7 @@ is only about the machinery.)
 
 ## Architecture
 
-Two scheduled Routines (Claude Code Remote triggers), deliberately split so a
-single research pass feeds both the repo and the email:
+One scheduled Routine (Claude Code Remote trigger) does everything:
 
 ```
 07:00 local (11:00 UTC)  PUBLISH  — session-bound routine in a persistent
@@ -16,17 +15,20 @@ single research pass feeds both the repo and the email:
                                     Follows CLAUDE.md: research → write →
                                     fact-check → update README → commit
                                     "Newsletter: YYYY-MM-DD" → push to main
-                                    → email the issue via the Zoho Mail
-                                    connector (scripts/md2email.py → HTML →
-                                    ZohoMail_sendEmail to the owner's gmail).
-(The former 07:15 relay routine was DELETED 2026-07-22 — its
-notification-based email path never delivered; the publish run now sends
-the email itself via scripts/zoho_send.sh.)
+                                    → email the issue via
+                                    scripts/zoho_send.sh (md2email.py →
+                                    HTML → Zoho Mail REST API → owner's
+                                    gmail).
 ```
+
+(History: a separate 07:15 email-relay routine existed 2026-07-18..22; its
+notification-based delivery never worked and it was deleted once the
+publish run could email directly.)
 
 Design invariants:
 
-- **Email == repo, byte for byte.** The relay only echoes what publish pushed.
+- **Email == repo, byte for byte.** The publish run emails the exact issue
+  it just pushed.
 - **Publish is prompt-thin.** Its trigger prompt says "follow CLAUDE.md" —
   process changes ship as commits to CLAUDE.md, not trigger edits.
 - **No Anthropic API key anywhere.** Everything is session/Routine-based; no
@@ -52,13 +54,14 @@ Design invariants:
   not have registered, and blind retries make duplicates.
 - **Binding trade-off**: session-bound routines inherit the session's git
   auth (can push) but cannot carry notifications; fresh-session routines can
-  carry notifications but have no push auth. This is *why* there are two
-  routines.
+  carry notifications but have no push auth. (Notification email proved
+  undeliverable anyway — delivery goes through the Zoho API instead.)
 - **Egress policy blocks non-MCP GitHub writes** (repo settings, branch
   renames → HTTP 403 from the proxy). Don't retry policy 403/407s; those
   operations belong to the user in the GitHub UI.
-- **The repo is public** — raw URLs work unauthenticated (the relay depends
-  on this), and nothing sensitive may be committed.
+- **The repo is public** — raw URLs work unauthenticated, and nothing
+  sensitive may be committed (Zoho creds live in `~/.zoho_mail_api`, outside
+  the repo).
 
 ## Failure modes & recovery
 
@@ -73,9 +76,8 @@ Check: `git log origin/main --oneline -3` for today's `Newsletter:` commit.
   `persistent_session_id` omitted = self-bind), delete the orphaned trigger,
   and update this registry.
 - If the routine fired but the run failed mid-way, re-fire it manually
-  (`fire_trigger`) or write the issue by hand following CLAUDE.md.
-- The relay is self-healing for this case: it emails the newest existing
-  issue with a "not published yet" note.
+  (`fire_trigger`) or write the issue by hand following CLAUDE.md, then run
+  `scripts/zoho_send.sh` for the email.
 
 ### 2. Email didn't arrive
 
@@ -118,15 +120,14 @@ the 2026-07-18 issue's fabricated "Gemini 3.5 Pro launch" correction.
 ### 4. Duplicate or missing routines after an errored MCP call
 
 `list_triggers` is the source of truth. Delete duplicates by ID; recreate
-missing ones from the registry above (prompts: publish = "follow CLAUDE.md
-process, work autonomously, don't redo published dates"; relay = "fetch
-today's raw newsletter URL from main, output verbatim, fallback to newest
-with a note").
+the publish routine from the registry above (prompt: "follow CLAUDE.md
+process, work autonomously, don't redo published dates; finish with a top-3
+summary").
 
 ### 5. Schedule changes
 
-`update_trigger` handles cron/name/enabled without touching the prompt. Keep
-publish ≥15 minutes ahead of relay, and update the registry table here.
+`update_trigger` handles cron/name/enabled without touching the prompt.
+Update the registry table here after any change.
 
 ## Standing decisions (user-confirmed; don't re-litigate)
 
@@ -134,8 +135,9 @@ publish ≥15 minutes ahead of relay, and update the registry table here.
 - Default branch is `main`; newsletters push straight to it, no PRs.
 - One research pass per day; the emailed issue must match the published file
   byte-for-byte in content.
-- Email delivery via the Zoho Mail connector at the end of the publish run
-  (from `viktor.lanovliuk@zohomail.com` to the owner's gmail), not via
-  routine notifications — those were proven undelivered 2026-07-19.
+- Email delivery via `scripts/zoho_send.sh` (Zoho Mail REST API, from
+  `viktor.lanovliuk@zohomail.com` to the owner's gmail) at the end of the
+  publish run — not routine notifications (undelivered), not SMTP (ports
+  blocked), not the connector (absent in scheduled runs).
 - Issue size target is ~12–15 stories (owner request, 2026-07-19): widen the
   net on slow days rather than shorten.
