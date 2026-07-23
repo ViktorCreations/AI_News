@@ -19,13 +19,9 @@ single research pass feeds both the repo and the email:
                                     → email the issue via the Zoho Mail
                                     connector (scripts/md2email.py → HTML →
                                     ZohoMail_sendEmail to the owner's gmail).
-07:15 local (11:15 UTC)  RELAY    — DEPRECATED fallback (see below). Fresh-
-                                    session routine with email notifications
-                                    on; its notification-based email was
-                                    proven undelivered on 2026-07-19, so it
-                                    is not a real delivery path. Scheduled
-                                    for deletion once the Zoho email step
-                                    succeeds in a scheduled (headless) run.
+(The former 07:15 relay routine was DELETED 2026-07-22 — its
+notification-based email path never delivered; the publish run now sends
+the email itself via scripts/zoho_send.sh.)
 ```
 
 Design invariants:
@@ -41,7 +37,6 @@ Design invariants:
 | Routine | Trigger ID | Cron (UTC) | Binding | Notifications |
 |---|---|---|---|---|
 | Daily AI newsletter (publish) | `trig_013uwjDfce9Eu4RkFBEmFkfQ` | `0 11 * * *` | session-bound → `session_01JHEXp6dpeg5hK3DQGdj4eK` | none (server rejects notifications on session-bound routines) |
-| Daily AI newsletter — email (relay, DEPRECATED) | `trig_01GbxBCjF5dZrHiwk6MjbgPD` | `15 11 * * *` | fresh session per fire, environment `env_01HPAanz6q11rUSsDu3MubpC` | email on, push off — never delivers; delete after Zoho step proves out headless |
 
 (A spent one-shot `send_later` trigger from initial setup may also appear in
 `list_triggers` with `ended_reason: run_once_fired` — inert, ignorable.)
