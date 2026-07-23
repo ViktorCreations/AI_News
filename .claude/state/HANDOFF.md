@@ -4,9 +4,9 @@
 None in flight. Pipeline fully operational end-to-end: research → write →
 fact-check → publish → **email via `scripts/zoho_send.sh`** (Zoho Mail REST
 API over HTTPS; OAuth refresh token obtained 2026-07-22; test email of the
-07-22 issue delivered to the owner's gmail). Watch item: the next 11:00 UTC
-run is the first fully headless publish→email — verify a `Newsletter:`
-commit AND email arrival.
+07-22 issue delivered to the owner's gmail). **VERIFIED 2026-07-23: first fully
+headless publish→email cycle succeeded** (commit a3619f2 + Zoho API send,
+no human in the loop). Pipeline is steady-state.
 
 ## Routine registry (live state, verify on resume)
 | Routine | Trigger ID | Cron (UTC) | Binding | Notifications |
