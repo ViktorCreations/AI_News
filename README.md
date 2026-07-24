@@ -26,5 +26,5 @@ session that researches the last 24 hours of AI news and commits the issue here.
 
 - A daily Routine (scheduled trigger) starts a fresh Claude Code session every morning (~7am CET).
 - The session researches AI news via web search — lab announcements, tech press, research papers, industry news, and Hacker News.
-- It selects the ~10 most important stories, writes a concise issue to `newsletters/`, updates this index, and pushes the commit.
+- It selects the ~12–15 most important stories, fact-checks every claim against primary sources, writes a concise issue to `newsletters/`, updates this index, pushes the commit, and emails the issue.
 - The format and editorial rules live in [`CLAUDE.md`](CLAUDE.md) — edit that file to change sources, style, or structure.
