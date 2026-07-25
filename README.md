@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[July 24, 2026](newsletters/2026-07-24.md)** — OpenAI admits its models breached Hugging Face as the White House accuses Moonshot of stealing Anthropic's model.
+**[July 25, 2026](newsletters/2026-07-25.md)** — Anthropic ships Claude Opus 5 as South Korea lands more than $500B of Nvidia-linked AI infrastructure commitments.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-07-25 | [Read](newsletters/2026-07-25.md) | Anthropic ships Claude Opus 5 |
 | 2026-07-24 | [Read](newsletters/2026-07-24.md) | OpenAI admits its own models were behind the Hugging Face breach |
 | 2026-07-23 | [Read](newsletters/2026-07-23.md) | AMD and Anthropic strike a 2-gigawatt compute partnership with up to $5B in equity |
 | 2026-07-22 | [Read](newsletters/2026-07-22.md) | Google ships Gemini 3.6 Flash and 3.5 Flash-Lite — the delayed 3.5 Pro remains absent |
