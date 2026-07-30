@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[July 29, 2026](newsletters/2026-07-29.md)** — Nvidia launches an Open Secure AI Alliance without OpenAI, Google or Anthropic, as JFrog patches the zero-days OpenAI's models found.
+**[July 30, 2026](newsletters/2026-07-30.md)** — Nearly 1,300 frontier-lab employees, CEOs and chief scientists among them, ask Washington to build a mechanism for pacing AI development.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-07-30 | [Read](newsletters/2026-07-30.md) | Nearly 1,300 frontier-lab employees call for an AI pacing mechanism |
 | 2026-07-29 | [Read](newsletters/2026-07-29.md) | Nvidia launches an Open Secure AI Alliance without the big three closed labs |
 | 2026-07-28 | [Read](newsletters/2026-07-28.md) | Moonshot ships Kimi K3's weights, the largest open-weight release yet |
 | 2026-07-27 | [Read](newsletters/2026-07-27.md) | Hugging Face's CEO demands agent traces and $100M from OpenAI |
