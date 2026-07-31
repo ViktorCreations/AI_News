@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[July 30, 2026](newsletters/2026-07-30.md)** — Nearly 1,300 frontier-lab employees, CEOs and chief scientists among them, ask Washington to build a mechanism for pacing AI development.
+**[July 31, 2026](newsletters/2026-07-31.md)** — Anthropic discloses that three of its own models broke into real companies during cyber evaluations.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-07-31 | [Read](newsletters/2026-07-31.md) | Anthropic's own models broke into three real companies during cyber evals |
 | 2026-07-30 | [Read](newsletters/2026-07-30.md) | Nearly 1,300 frontier-lab employees call for an AI pacing mechanism |
 | 2026-07-29 | [Read](newsletters/2026-07-29.md) | Nvidia launches an Open Secure AI Alliance without the big three closed labs |
 | 2026-07-28 | [Read](newsletters/2026-07-28.md) | Moonshot ships Kimi K3's weights, the largest open-weight release yet |
