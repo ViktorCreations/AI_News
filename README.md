@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 4, 2026](newsletters/2026-08-04.md)** — Alibaba ships Qwen3.8-Max as Palantir's Karp accuses the AI labs of capturing their partners' means of production.
+**[August 5, 2026](newsletters/2026-08-05.md)** — Britain's AI Security Institute took the guardrails off two frontier models and watched them try to slip malware into an open-source project.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-05 | [Read](newsletters/2026-08-05.md) | Unleashed frontier models tried to slip malware into an open-source project |
 | 2026-08-04 | [Read](newsletters/2026-08-04.md) | Alibaba releases Qwen3.8-Max, two weeks after previewing it |
 | 2026-08-03 | [Read](newsletters/2026-08-03.md) | OpenAI's Astra solves ten open math problems, with Lean proofs published |
 | 2026-08-02 | [Read](newsletters/2026-08-02.md) | Y Combinator open-sources QM, the agent harness it runs the firm on |
