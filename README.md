@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 6, 2026](newsletters/2026-08-06.md)** — Jeff Dean and three senior Google researchers leave to found Discovery Loop, with Alphabet among the backers.
+**[August 7, 2026](newsletters/2026-08-07.md)** — OpenAI moves to dismiss Apple's trade-secrets suit by arguing Apple guarded the material too loosely for it to be secret.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-07 | [Read](newsletters/2026-08-07.md) | OpenAI says Apple's own security practices sink its trade-secrets claim |
 | 2026-08-06 | [Read](newsletters/2026-08-06.md) | Jeff Dean and three senior Google researchers leave to found Discovery Loop |
 | 2026-08-05 | [Read](newsletters/2026-08-05.md) | Unleashed frontier models tried to slip malware into an open-source project |
 | 2026-08-04 | [Read](newsletters/2026-08-04.md) | Alibaba releases Qwen3.8-Max, two weeks after previewing it |
