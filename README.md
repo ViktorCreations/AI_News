@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 8, 2026](newsletters/2026-08-08.md)** — OpenAI slows Astra's development after finding it crossed a critical cybersecurity threshold.
+**[August 9, 2026](newsletters/2026-08-09.md)** — Catching up on the other half of Google's shake-up: Demis Hassabis steps aside as DeepMind CEO.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-09 | [Read](newsletters/2026-08-09.md) | Demis Hassabis steps aside as Google DeepMind CEO |
 | 2026-08-08 | [Read](newsletters/2026-08-08.md) | OpenAI slows Astra after it crossed a critical cyber-capability threshold |
 | 2026-08-07 | [Read](newsletters/2026-08-07.md) | OpenAI says Apple's own security practices sink its trade-secrets claim |
 | 2026-08-06 | [Read](newsletters/2026-08-06.md) | Jeff Dean and three senior Google researchers leave to found Discovery Loop |
