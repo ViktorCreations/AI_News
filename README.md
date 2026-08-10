@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 9, 2026](newsletters/2026-08-09.md)** — Catching up on the other half of Google's shake-up: Demis Hassabis steps aside as DeepMind CEO.
+**[August 10, 2026](newsletters/2026-08-10.md)** — Anthropic makes Claude Code's auto mode the default, arguing the machine catches more harmful actions than the human did.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-10 | [Read](newsletters/2026-08-10.md) | Anthropic makes Claude Code's auto mode the default |
 | 2026-08-09 | [Read](newsletters/2026-08-09.md) | Demis Hassabis steps aside as Google DeepMind CEO |
 | 2026-08-08 | [Read](newsletters/2026-08-08.md) | OpenAI slows Astra after it crossed a critical cyber-capability threshold |
 | 2026-08-07 | [Read](newsletters/2026-08-07.md) | OpenAI says Apple's own security practices sink its trade-secrets claim |
