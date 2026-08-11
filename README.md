@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 10, 2026](newsletters/2026-08-10.md)** — Anthropic makes Claude Code's auto mode the default, arguing the machine catches more harmful actions than the human did.
+**[August 11, 2026](newsletters/2026-08-11.md)** — OpenAI ships GPT-5.6-Cyber, a vulnerability-hunting model gated behind identity checks, days after slowing Astra.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-11 | [Read](newsletters/2026-08-11.md) | OpenAI ships GPT-5.6-Cyber, a gated vulnerability-hunting model |
 | 2026-08-10 | [Read](newsletters/2026-08-10.md) | Anthropic makes Claude Code's auto mode the default |
 | 2026-08-09 | [Read](newsletters/2026-08-09.md) | Demis Hassabis steps aside as Google DeepMind CEO |
 | 2026-08-08 | [Read](newsletters/2026-08-08.md) | OpenAI slows Astra after it crossed a critical cyber-capability threshold |
