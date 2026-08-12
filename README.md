@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 11, 2026](newsletters/2026-08-11.md)** — OpenAI ships GPT-5.6-Cyber, a vulnerability-hunting model gated behind identity checks, days after slowing Astra.
+**[August 12, 2026](newsletters/2026-08-12.md)** — Anthropic will watermark Claude's text output, and an unreleased model pushed the Riemann hypothesis's verified bound higher.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-12 | [Read](newsletters/2026-08-12.md) | Anthropic will watermark Claude's text output |
 | 2026-08-11 | [Read](newsletters/2026-08-11.md) | OpenAI ships GPT-5.6-Cyber, a gated vulnerability-hunting model |
 | 2026-08-10 | [Read](newsletters/2026-08-10.md) | Anthropic makes Claude Code's auto mode the default |
 | 2026-08-09 | [Read](newsletters/2026-08-09.md) | Demis Hassabis steps aside as Google DeepMind CEO |
