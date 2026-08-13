@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 12, 2026](newsletters/2026-08-12.md)** — Anthropic will watermark Claude's text output, and an unreleased model pushed the Riemann hypothesis's verified bound higher.
+**[August 13, 2026](newsletters/2026-08-13.md)** — Alibaba publishes Qwen3.8's 2.4-trillion-parameter open weights, one of three frontier releases in 24 hours.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-13 | [Read](newsletters/2026-08-13.md) | Alibaba publishes Qwen3.8's 2.4T open weights |
 | 2026-08-12 | [Read](newsletters/2026-08-12.md) | Anthropic will watermark Claude's text output |
 | 2026-08-11 | [Read](newsletters/2026-08-11.md) | OpenAI ships GPT-5.6-Cyber, a gated vulnerability-hunting model |
 | 2026-08-10 | [Read](newsletters/2026-08-10.md) | Anthropic makes Claude Code's auto mode the default |
