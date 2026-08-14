@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 13, 2026](newsletters/2026-08-13.md)** — Alibaba publishes Qwen3.8's 2.4-trillion-parameter open weights, one of three frontier releases in 24 hours.
+**[August 14, 2026](newsletters/2026-08-14.md)** — Anthropic's agents fought a turf war over the same codebase, and OpenAI swapped screenshot capture for keystroke capture.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-14 | [Read](newsletters/2026-08-14.md) | Anthropic's agents fought a turf war over the same codebase |
 | 2026-08-13 | [Read](newsletters/2026-08-13.md) | Alibaba publishes Qwen3.8's 2.4T open weights |
 | 2026-08-12 | [Read](newsletters/2026-08-12.md) | Anthropic will watermark Claude's text output |
 | 2026-08-11 | [Read](newsletters/2026-08-11.md) | OpenAI ships GPT-5.6-Cyber, a gated vulnerability-hunting model |
