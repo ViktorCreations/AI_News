@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 15, 2026](newsletters/2026-08-15.md)** — Z.ai shipped GLM-5.3 but held back the weights over an offensive-security capability it says it never trained for.
+**[August 16, 2026](newsletters/2026-08-16.md)** — SpaceX closed its acquisition of Cursor, and OpenAI told European users that ChatGPT ads arrive this month.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-16 | [Read](newsletters/2026-08-16.md) | Cursor is now part of SpaceX |
 | 2026-08-15 | [Read](newsletters/2026-08-15.md) | Z.ai ships GLM-5.3 but holds back the open weights |
 | 2026-08-14 | [Read](newsletters/2026-08-14.md) | Anthropic's agents fought a turf war over the same codebase |
 | 2026-08-13 | [Read](newsletters/2026-08-13.md) | Alibaba publishes Qwen3.8's 2.4T open weights |
