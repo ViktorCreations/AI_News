@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 16, 2026](newsletters/2026-08-16.md)** — SpaceX closed its acquisition of Cursor, and OpenAI told European users that ChatGPT ads arrive this month.
+**[August 17, 2026](newsletters/2026-08-17.md)** — Anthropic ran 133 million contractor conversations with its bio-weapons classifiers switched off, and OpenAI dissolved its Preparedness team.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-17 | [Read](newsletters/2026-08-17.md) | Anthropic ran 133M contractor chats with its bio classifiers off |
 | 2026-08-16 | [Read](newsletters/2026-08-16.md) | Cursor is now part of SpaceX |
 | 2026-08-15 | [Read](newsletters/2026-08-15.md) | Z.ai ships GLM-5.3 but holds back the open weights |
 | 2026-08-14 | [Read](newsletters/2026-08-14.md) | Anthropic's agents fought a turf war over the same codebase |
