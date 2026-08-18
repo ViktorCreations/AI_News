@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 17, 2026](newsletters/2026-08-17.md)** — Anthropic ran 133 million contractor conversations with its bio-weapons classifiers switched off, and OpenAI dissolved its Preparedness team.
+**[August 18, 2026](newsletters/2026-08-18.md)** — An Israeli contractor built a fake think tank to feed AI chatbots, while Amazon shreds rare books and Google buys a dead airline's inbox.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-18 | [Read](newsletters/2026-08-18.md) | An Israeli contractor built a fake think tank to feed AI chatbots |
 | 2026-08-17 | [Read](newsletters/2026-08-17.md) | Anthropic ran 133M contractor chats with its bio classifiers off |
 | 2026-08-16 | [Read](newsletters/2026-08-16.md) | Cursor is now part of SpaceX |
 | 2026-08-15 | [Read](newsletters/2026-08-15.md) | Z.ai ships GLM-5.3 but holds back the open weights |
