@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 19, 2026](newsletters/2026-08-19.md)** — OpenAI put a number on containing its own models: 20% monitoring overhead, with RL on its largest models still paused.
+**[August 20, 2026](newsletters/2026-08-20.md)** — Binance opened live trading to AI agents, and Pew found 52% of Americans more concerned than excited about AI.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-20 | [Read](newsletters/2026-08-20.md) | Binance opens live trading to AI agents |
 | 2026-08-19 | [Read](newsletters/2026-08-19.md) | OpenAI puts a number on the cost of containment: 20% overhead |
 | 2026-08-18 | [Read](newsletters/2026-08-18.md) | An Israeli contractor built a fake think tank to feed AI chatbots |
 | 2026-08-17 | [Read](newsletters/2026-08-17.md) | Anthropic ran 133M contractor chats with its bio classifiers off |
