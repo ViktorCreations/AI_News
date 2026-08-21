@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 20, 2026](newsletters/2026-08-20.md)** — Binance opened live trading to AI agents, and Pew found 52% of Americans more concerned than excited about AI.
+**[August 21, 2026](newsletters/2026-08-21.md)** — Pew finds a third of web pages published since ChatGPT launched show signs of AI authorship.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-21 | [Read](newsletters/2026-08-21.md) | A third of post-ChatGPT web pages show signs of AI authorship |
 | 2026-08-20 | [Read](newsletters/2026-08-20.md) | Binance opens live trading to AI agents |
 | 2026-08-19 | [Read](newsletters/2026-08-19.md) | OpenAI puts a number on the cost of containment: 20% overhead |
 | 2026-08-18 | [Read](newsletters/2026-08-18.md) | An Israeli contractor built a fake think tank to feed AI chatbots |
