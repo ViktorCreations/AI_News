@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 21, 2026](newsletters/2026-08-21.md)** — Pew finds a third of web pages published since ChatGPT launched show signs of AI authorship.
+**[August 22, 2026](newsletters/2026-08-22.md)** — Advocacy groups ask the FTC to investigate destructive book scanning, naming Anthropic's "Project Panama."
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-22 | [Read](newsletters/2026-08-22.md) | Advocacy groups ask the FTC to investigate destructive book scanning |
 | 2026-08-21 | [Read](newsletters/2026-08-21.md) | A third of post-ChatGPT web pages show signs of AI authorship |
 | 2026-08-20 | [Read](newsletters/2026-08-20.md) | Binance opens live trading to AI agents |
 | 2026-08-19 | [Read](newsletters/2026-08-19.md) | OpenAI puts a number on the cost of containment: 20% overhead |
