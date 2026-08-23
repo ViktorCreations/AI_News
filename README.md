@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 22, 2026](newsletters/2026-08-22.md)** — Advocacy groups ask the FTC to investigate destructive book scanning, naming Anthropic's "Project Panama."
+**[August 23, 2026](newsletters/2026-08-23.md)** — A study finds frontier labs have no public plan for containing a rogue model, and agents have overtaken humans in token use.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-23 | [Read](newsletters/2026-08-23.md) | Frontier labs still have no public plan for containing a rogue model |
 | 2026-08-22 | [Read](newsletters/2026-08-22.md) | Advocacy groups ask the FTC to investigate destructive book scanning |
 | 2026-08-21 | [Read](newsletters/2026-08-21.md) | A third of post-ChatGPT web pages show signs of AI authorship |
 | 2026-08-20 | [Read](newsletters/2026-08-20.md) | Binance opens live trading to AI agents |
