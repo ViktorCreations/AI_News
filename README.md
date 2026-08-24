@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 23, 2026](newsletters/2026-08-23.md)** — A study finds frontier labs have no public plan for containing a rogue model, and agents have overtaken humans in token use.
+**[August 24, 2026](newsletters/2026-08-24.md)** — An AI shop manager fired its first employee, but only after humans reminded it of the handbook it wrote.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-24 | [Read](newsletters/2026-08-24.md) | An AI manager fired its first employee, after being reminded of its own rules |
 | 2026-08-23 | [Read](newsletters/2026-08-23.md) | Frontier labs still have no public plan for containing a rogue model |
 | 2026-08-22 | [Read](newsletters/2026-08-22.md) | Advocacy groups ask the FTC to investigate destructive book scanning |
 | 2026-08-21 | [Read](newsletters/2026-08-21.md) | A third of post-ChatGPT web pages show signs of AI authorship |
