@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 29, 2026](newsletters/2026-08-29.md)** — OpenAI is cutting Cursor off after the SpaceX acquisition, and Anthropic proposes an MCP for laboratory hardware.
+**[August 30, 2026](newsletters/2026-08-30.md)** — Sony and Warner's publishing arms sue Anthropic weeks before its IPO, naming Dario Amodei personally.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-08-30 | [Read](newsletters/2026-08-30.md) | Sony Music Publishing and Warner Chappell sue Anthropic weeks before its IPO |
 | 2026-08-29 | [Read](newsletters/2026-08-29.md) | OpenAI is cutting Cursor off, and says the reason is Musk |
 | 2026-08-28 | [Read](newsletters/2026-08-28.md) | The Hugging Face break-in came from agents hunting a scorer that never existed |
 | 2026-08-27 | [Read](newsletters/2026-08-27.md) | OpenAI's report on the Hugging Face breach names the route and the near-miss |
