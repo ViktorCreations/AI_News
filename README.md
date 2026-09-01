@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[August 31, 2026](newsletters/2026-08-31.md)** — Positive employee sentiment about AI has halved since 2019, and the labs are buying Mac minis by the tens of thousands.
+**[September 1, 2026](newsletters/2026-09-01.md)** — The Pentagon deploys ChatGPT Mil and Grok for Government, with Anthropic conspicuously absent.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-09-01 | [Read](newsletters/2026-09-01.md) | The Pentagon deploys ChatGPT Mil and Grok for Government — without Anthropic |
 | 2026-08-31 | [Read](newsletters/2026-08-31.md) | Positive employee sentiment about AI has halved since 2019 |
 | 2026-08-30 | [Read](newsletters/2026-08-30.md) | Sony Music Publishing and Warner Chappell sue Anthropic weeks before its IPO |
 | 2026-08-29 | [Read](newsletters/2026-08-29.md) | OpenAI is cutting Cursor off, and says the reason is Musk |
