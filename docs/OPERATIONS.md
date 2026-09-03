@@ -88,23 +88,36 @@ a reliable channel; the relay routine exists only as a deprecated vestige).
 
 - **Primary path (headless-capable)**: `scripts/zoho_send.sh
   newsletters/YYYY-MM-DD.md` sends via the Zoho Mail REST API over HTTPS
-  using OAuth credentials in `~/.zoho_mail_api` (mode 600, OUTSIDE the repo
-  — never commit it). The file holds CLIENT_ID / CLIENT_SECRET /
-  REFRESH_TOKEN from a Zoho **Self Client** (api-console.zoho.com, scope
-  `ZohoMail.messages.CREATE,ZohoMail.accounts.READ`); the script exchanges
-  a one-time GRANT_CODE for the permanent refresh token on first run.
+  using OAuth credentials — CLIENT_ID / CLIENT_SECRET / REFRESH_TOKEN from a
+  Zoho **Self Client** (api-console.zoho.com, scope
+  `ZohoMail.messages.CREATE,ZohoMail.accounts.READ`), plus ACCOUNT_ID /
+  FROM_ADDRESS / TO_ADDRESS. The script exchanges a one-time GRANT_CODE for
+  the permanent refresh token on first run.
+- **Where the credentials must live (this is the whole ballgame)**: the
+  script reads them from `~/.zoho_mail_api` (mode 600) if that file exists,
+  otherwise from **environment variables**. Use the environment variables,
+  set in the CCR environment config: they are re-injected into every new
+  container, whereas the file lives inside the container and is destroyed by
+  a reclaim. Never commit either — the repo is public.
+  - **This has already cost 17 issues.** The file vanished with a reclaim
+    after the 2026-08-16 send; every issue from 2026-08-17 to 2026-09-02 was
+    written, fact-checked, committed and pushed, but not emailed. Recovered
+    on 2026-09-03 via the connector: that day's issue sent in full, plus one
+    catch-up digest linking the 17. Publishing never broke; only delivery.
 - **Why not SMTP**: tested 2026-07-22 — the egress proxy only passes
   HTTPS; smtp.zoho.com:465 is reset and :587 times out. App passwords are
   useless here; only the HTTPS REST API works headless.
-- **Why not the connector**: confirmed 2026-07-20 — `mcp__ZohoMCP__*` tools
-  do NOT load in headless scheduled fires (they need the owner's
-  interactive claude.ai client). Connector remains the fallback for manual
-  re-sends from live sessions.
-- **If email fails**: check `~/.zoho_mail_api` exists and has REFRESH_TOKEN
-  (container reclaim DELETES it — the file must be re-created from the
-  template in this section and re-authorized with a fresh grant code, since
-  it lives outside git). Then check the script's error output (token
-  refresh vs send step).
+- **The connector as fallback**: `mcp__ZohoMCP__ZohoMail_sendEmail`, with
+  `ZohoMail_getMailAccounts` for the accountId and `ZohoMail_SearchEmails`
+  to confirm what actually went out. Render the body with
+  `python3 scripts/md2email.py <issue>` so it matches the published file.
+  Availability is **not** reliable: it failed to load in a headless fire on
+  2026-07-20 but did load in the scheduled fire on 2026-09-03. Treat it as
+  opportunistic recovery, never as the delivery path.
+- **If email fails**: run the script and read its error. It now distinguishes
+  a credentials problem (names the missing variables) from a Zoho auth or
+  send problem. A missing-credentials error means the file is gone and the
+  environment variables were never set — see above.
 - If Zoho auth expired, the user must re-authenticate the connector in the
   claude.ai connector settings.
 - Sender reputation: mail comes from a fresh zohomail.com address — check
