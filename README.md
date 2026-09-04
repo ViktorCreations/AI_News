@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[September 3, 2026](newsletters/2026-09-03.md)** — Astra is OpenAI's first "critical" cyber model, and its architecture is pushing reasoning where monitors can't follow.
+**[September 4, 2026](newsletters/2026-09-04.md)** — GPT-6 Astra ships and OpenAI declares the AGI era, while evaluators disagree and ARC Prize disputes the headline number.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-09-04 | [Read](newsletters/2026-09-04.md) | GPT-6 Astra ships, and OpenAI says this is the AGI era |
 | 2026-09-03 | [Read](newsletters/2026-09-03.md) | Astra is OpenAI's first "critical" cyber model, and its reasoning is going dark |
 | 2026-09-02 | [Read](newsletters/2026-09-02.md) | Astra is on its way, with a perfect ExploitBench score |
 | 2026-09-01 | [Read](newsletters/2026-09-01.md) | The Pentagon deploys ChatGPT Mil and Grok for Government — without Anthropic |
