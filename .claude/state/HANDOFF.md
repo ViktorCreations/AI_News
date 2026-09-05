@@ -1,78 +1,79 @@
-# Session handoff — 2026-07-24 21:38 UTC
+# Session handoff — 2026-09-05 22:48 UTC
 
 ## Current task
-None in flight. The pipeline is steady-state and fully autonomous:
-research → write → fact-check → publish → email, all inside one scheduled
-run. Issues published daily 2026-07-18 through 2026-07-24 (latest commit
-`52c15fb`). The last three runs (07-22, 07-23, 07-24) completed headlessly
-with email delivered and no human intervention.
+None in flight. Daily publishing is steady-state and current: issues exist for
+every date 2026-07-18 through 2026-09-05, latest commit `5c1dc63`. Working tree
+clean, branch `main`, pushed.
 
-Next scheduled run: 2026-07-25 ~11:05 UTC. Nothing needs doing before then.
+**Publishing works. Email delivery does not, without manual fallback.** This is
+the single most important thing for a fresh session to know:
 
-## Routine registry (live state, verified against `list_triggers` this session)
-| Routine | Trigger ID | Cron (UTC) | Binding | Notifications | Prompt gist |
+- `~/.zoho_mail_api` does not exist and no Zoho environment variables are set.
+  `scripts/zoho_send.sh` therefore fails on every run with a message naming the
+  six missing variables (CLIENT_ID, CLIENT_SECRET, ACCOUNT_ID, FROM_ADDRESS,
+  TO_ADDRESS, REFRESH_TOKEN).
+- Expect that failure. Fall back to the ZohoMCP connector when it is loaded:
+  `mcp__ZohoMCP__ZohoMail_sendEmail` with `accountId` 6087715000000008002,
+  from the Zoho mailbox to the configured notification email, body rendered by
+  `python3 scripts/md2email.py newsletters/YYYY-MM-DD.md`, subject = the issue's
+  H1. Used successfully on 09-03, 09-04 and 09-05.
+- If neither path works: publish steps 1–6 anyway and state the email failure
+  plainly in the run summary. Do not silently skip it.
+
+**Backlog: closed, no action needed.** A container reclaim destroyed the
+credentials file after the 2026-08-16 send. Issues 2026-08-17 through
+2026-09-02 (17 of them) were written, fact-checked, committed and pushed but
+never emailed. On 09-03 the owner chose a single catch-up digest over 17
+individual re-sends; that digest was sent and the gap is settled. Do not
+re-send those issues.
+
+## Routine registry (live state, verify on resume)
+| Name | Trigger ID | Cron (UTC) | Binding | Notifications | Prompt gist |
 |---|---|---|---|---|---|
-| Daily AI newsletter | `trig_013uwjDfce9Eu4RkFBEmFkfQ` | `0 11 * * *` (fires ~11:05) | session-bound → `session_01JHEXp6dpeg5hK3DQGdj4eK` | none | "Follow the Daily newsletter process in CLAUDE.md exactly… work autonomously… don't redo a published date… finish with a top-3 summary" |
+| Daily AI newsletter | `trig_013uwjDfce9Eu4RkFBEmFkfQ` | `0 11 * * *` (fires ~11:05–11:08) | session-bound to `session_01JHEXp6dpeg5hK3DQGdj4eK` | none | Run the CLAUDE.md daily process; research, select ~10 stories, write today's UTC issue, update README, commit `Newsletter: YYYY-MM-DD`, push to default branch, work autonomously, don't redo a published date, close with the top-3 paragraph |
 
-Three spent one-shot `send_later` triggers also appear in `list_triggers`
-with `ended_reason: run_once_fired` (`trig_019Ngy6iXGtGKqPLdYx8wJ3y`,
-`trig_01AKZFYEMAgb3VQF7bcwttJA`, `trig_01TBrYBhrUHhXib9X3MaHkyF`) — inert,
-ignorable, safe to delete.
-
-The 07:15 email-relay routine `trig_01GbxBCjF5dZrHiwk6MjbgPD` was DELETED
-2026-07-22: its notification-based delivery never actually sent anything.
+Enabled, environment `env_01HPAanz6q11rUSsDu3MubpC`, no routine-level
+environment variables set, no MCP connections attached. Last fired
+2026-09-05T11:05:40Z; next 2026-09-06T11:04:56Z. Because it is session-bound,
+a container reclaim orphans it — see `docs/OPERATIONS.md` §1 for the rebind
+procedure.
 
 ## Decisions & constraints in force
-- **Routines only.** No Anthropic API key, no paid per-token credits, no
-  GitHub Actions AI pipeline — the owner will not pay per-token.
-- **Default branch is `main`.** Newsletters push straight to it; no PRs.
-- **Email == published issue**, byte-for-byte in content, sent at the end of
-  the publish run via `scripts/zoho_send.sh` (Zoho Mail REST API over
-  HTTPS). NOT routine notifications (proven undelivered 07-19), NOT SMTP
-  (ports blocked by the egress proxy, tested 07-22), NOT the Zoho MCP
-  connector (absent in headless scheduled runs, confirmed 07-20).
-- **Issue size target ~12–15 stories**; widen the net on slow days rather
-  than shorten, but never pad with unverifiable or stale-as-new items.
-- **Thematic sections are exclusive homes, top-5 each**: Capital & Deals
-  (money-led), Regulation & Policy (government action), Compute & Data
-  Centers (physical buildout). Precedence: deal-value → Capital; chip
-  regulation → Regulation; otherwise buildout → Compute. Omit empty
-  sections; fewer than 3 Top Stories is acceptable.
-- **No-repeat rule**: read/grep the last 7 issues before selecting. A
-  covered story returns only with a genuinely new development, and the item
-  must lead with the dated delta.
-- **Fact-check skill pass is mandatory** before every publish. A story that
-  fails is dropped, never softened.
-- **Repo is public**: no secrets or personal data in committed files. Zoho
-  OAuth credentials live only in `~/.zoho_mail_api` (mode 600, outside git).
-- The "fable trailer history rewrite" idea was explicitly cancelled by the
-  owner — do not raise it again.
+- Repo is public: no secrets, tokens, or personal data in committed files. Zoho
+  OAuth credentials live outside git only.
+- The `fact-check` skill is mandatory before every publish. A story that fails
+  verification is dropped, never softened.
+- Prefer a fuller issue (~12–15 stories); on slow days widen the net before
+  shortening, and never pad with stale or unverifiable items.
+- Thematic sections are exclusive homes: money-led → Capital & Deals,
+  government/regulatory action → Regulation & Policy, physical buildout and
+  chips → Compute & Data Centers. Each capped at five.
+- Commit trailer is now `Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>`
+  followed by the `Claude-Session:` line (changed from Opus 4.8 on 2026-09-02).
+- Do not create pull requests unless explicitly asked.
+- Process changes ship as commits to `CLAUDE.md`, not as edits to the routine
+  prompt.
 
 ## Recently changed
-- `newsletters/2026-07-24.md` — today's issue (6 verified stories).
-- `README.md` — Latest/Archive index updated through 07-24.
-- `scripts/zoho_send.sh` — email sender (REST API, handles OAuth refresh);
-  `scripts/md2email.py` — markdown→inline-styled-HTML converter.
-- `~/.zoho_mail_api` — created and authorized 07-22 (outside the repo).
-- `CLAUDE.md` — step 7 (email), fact-checking rules, no-repeat rule,
-  thematic section rules, ~12–15 story target.
-- `.claude/skills/fact-check/SKILL.md` — added no-repeat check (#5) and
-  section-placement verification.
-- `docs/OPERATIONS.md` — rewritten for the single-routine architecture.
-- `.gitignore` — added for Python bytecode.
-- Corrections appended to `newsletters/2026-07-18.md` (fabricated Gemini
-  3.5 Pro launch) and `2026-07-19.md` (stale GPT-5.6 rollout status).
+- `scripts/zoho_send.sh` (`88c1708`) — reads credentials from environment
+  variables when the file is absent, and names the missing ones on failure.
+- `docs/OPERATIONS.md` §2 (`88c1708`) — documents the environment-variable path
+  as the durable one, records the 17-issue delivery gap, and corrects the old
+  claim that the ZohoMCP connector never loads in headless scheduled fires (it
+  loaded on 2026-09-03, 09-04 and 09-05).
+- `newsletters/2026-08-17` … `2026-09-05` and `README.md` — daily issues.
 
 ## Open questions / risks
-- **Container reclaim is the main single point of failure.** The publish
-  routine is session-bound, so a reclaim silently stops publishing AND
-  deletes `~/.zoho_mail_api`. Symptoms: no `Newsletter:` commit in the
-  morning, and/or no email. Recovery: `docs/OPERATIONS.md` §1 (rebind the
-  routine to a live session) and §2 (~3-minute Zoho grant-code redo).
-- **Sender reputation**: mail comes from a fresh Zoho address; if an issue
-  lands in the spam folder, the owner should mark it "Not spam" once.
-- **Aggregator contamination is constant.** Recent runs caught fabricated
-  or misdated stories nearly every day (a phantom "Gemini 3.5 Flash Cyber",
-  a "DeepSeek V4 launches July 24" that was actually an April GA, an
-  Anthropic revenue figure redated from May). Never relax the primary-source
-  test.
+- **Live failure mode:** email delivery depends on the ZohoMCP connector
+  happening to load. It is not guaranteed on any given fire. The durable fix is
+  the owner setting the six credential variables in the CCR environment config
+  (`env_01HPAanz6q11rUSsDu3MubpC`); only they can generate the Self Client
+  credentials and grant code. Until then, every run needs the fallback.
+- Session-bound routine: if this session's container is reclaimed the routine
+  fires into nothing and publishing stops silently. Recovery in
+  `docs/OPERATIONS.md` §1.
+- The-decoder has become the dominant source for daily research. Keep pulling
+  from TechCrunch, The Register, Hacker News, arXiv and lab blogs directly so
+  the issue does not become one outlet's rewrite.
+- Recurring trap, caught repeatedly: aggregators resurface weeks-old papers and
+  funding rounds as new. Check the date on the *event*, not the article.
