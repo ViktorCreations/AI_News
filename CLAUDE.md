@@ -137,6 +137,10 @@ than frontier AI and will not produce a story every day. Do not pad it.
 
 - **Window**: draw from the **last 30 days**, not 24 hours, and date every
   item explicitly ("effective August 6", "filed May 14"). Two to four items.
+  (The launch issue, 2026-09-10, carried a one-time seven-item backfill of
+  the year to date at the owner's request. That was a one-off; the 30-day
+  window applies from 2026-09-11 onward. Do not re-run the backfill, and
+  apply the no-repeat rule to those seven items like any others.)
 - **Context items**: when there is no fresh news, up to two items may be
   labelled `Context:` and give dated background on a live issue — a rule
   already on the books, an active case, a deadline coming up, a funded
