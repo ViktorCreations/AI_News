@@ -15,12 +15,24 @@ Input: a draft at `newsletters/YYYY-MM-DD.md` (or a published issue to audit).
 
 Work through the issue item by item — every Top Story, Research item, Product
 item, Compute & Data Centers item, Regulation & Policy item, Capital & Deals
-item, and Quick Hit. For each item, do all four checks (plus the no-repeat
-check). Also verify section placement per CLAUDE.md's thematic section
-rules: money-led → Capital & Deals; government/regulatory action →
-Regulation & Policy; physical buildout/chips/deployments → Compute & Data
-Centers; each capped at 5. Flag any item that leaked into the wrong
-section.
+item, AI in Real Estate item, and Quick Hit. For each item, do all four checks
+(plus the no-repeat check). Also verify section placement per CLAUDE.md's
+thematic section rules: money-led → Capital & Deals; government/regulatory
+action → Regulation & Policy; physical buildout/chips/deployments → Compute &
+Data Centers; anything about the property business → AI in Real Estate, which
+outranks the other three (but data centers stay in Compute). Capped at 5 each,
+4 for AI in Real Estate. Flag any item that leaked into the wrong section.
+
+**AI in Real Estate needs a harder source pass than the rest of the issue.**
+Vendor content marketing and affiliate SEO dominate this beat. Kill on sight:
+"best AI property management software", "complete guide to AI in real estate",
+and any market-size, CAGR or "AVM median error rate" statistic traceable to a
+research-mill report. Every item needs a dated primary source (GSE lender
+letter or announcement, regulator document, court filing, company press
+release) or a dated, bylined trade-press article. Items may be labelled
+`Context:` and drawn from the last 30 days rather than 24 hours — but the
+dates must be explicit and correct, and a `Context:` label never excuses an
+unverified claim.
 
 ### 1. Event check (did it actually happen?)
 

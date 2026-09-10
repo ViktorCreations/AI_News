@@ -15,6 +15,11 @@ commits the issue. If you are that session, follow the process below exactly.
      regulation and policy
    - Research: notable new papers, benchmarks, open-source model releases
    - Community: what's trending on Hacker News about AI/LLMs
+   - Real estate: AI in property — valuation and appraisal standards,
+     mortgage/underwriting rules from the GSEs and housing regulators,
+     rent-setting and its litigation, property management and tenant
+     operations, proptech funding. Search this angle separately every day;
+     it rarely surfaces in general AI coverage.
 2. **Select the ~12–15 most important stories** (owner preference: a fuller
    issue beats a minimal one). Prefer primary sources. Skip rumors, reposts,
    and incremental minor updates. Deduplicate stories covered by multiple
@@ -87,12 +92,18 @@ commits the issue. If you are that session, follow the process below exactly.
 ## Quick Hits
 
 - [Headline](link) — a few words of context.
+
+## AI in Real Estate
+
+- **[Item](link)** — one sentence (what changed, for whom, dated).
 ```
 
 **Thematic section rules** (Compute & Data Centers, Regulation & Policy,
-Capital & Deals): each is the EXCLUSIVE home for its beat, capped at the
-**top 5** by importance — drop the rest, never overflow into other
-sections. Omit any section with no fresh qualifying items.
+Capital & Deals, AI in Real Estate): each is the EXCLUSIVE home for its
+beat, capped at the **top 5** by importance (AI in Real Estate: top 4) —
+drop the rest, never overflow into other sections. Omit any section with
+no fresh qualifying items, except AI in Real Estate, which has its own
+rules below.
 
 - **Capital & Deals**: every money-led story — funding rounds, M&A, IPOs,
   valuations, market-cap moves, and deals whose substance is the contract
@@ -105,6 +116,43 @@ sections. Omit any section with no fresh qualifying items.
   deployments, energy for AI. (If the story is the deal value, it goes to
   Capital & Deals instead; if it's regulatory action about chips, it goes
   to Regulation & Policy.)
+- **AI in Real Estate**: the last section in the issue, and the exclusive
+  home for AI in the property business — it **outranks the other thematic
+  sections** when the story is about real estate, so a proptech round goes
+  here rather than Capital & Deals and a GSE or housing-agency AI rule goes
+  here rather than Regulation & Policy. Covers: valuation and pricing
+  (AVMs, appraisal standards), market trend and forecasting claims,
+  mortgage and underwriting (lender AI governance, credit models, rates),
+  day-to-day management (leasing, rent-setting, tenant screening,
+  maintenance triage, service charges and other tenant expense, arrears and
+  eviction), AI acting as agent or virtual property manager, brokerage and
+  listing portals, construction tech, and the litigation and regulation
+  specific to these. **Data centers stay in Compute & Data Centers** even
+  though they are land, power and buildings — siting, capacity and energy
+  are AI infrastructure, not the real-estate business. A housing-market
+  story with no AI in it does not belong in this newsletter at all.
+
+**AI in Real Estate — beat-specific rules.** This beat moves far slower
+than frontier AI and will not produce a story every day. Do not pad it.
+
+- **Window**: draw from the **last 30 days**, not 24 hours, and date every
+  item explicitly ("effective August 6", "filed May 14"). Two to four items.
+- **Context items**: when there is no fresh news, up to two items may be
+  labelled `Context:` and give dated background on a live issue — a rule
+  already on the books, an active case, a deadline coming up, a funded
+  company's actual operating numbers. Never undated evergreen assertion.
+- **Sourcing is the hard part here.** This query space is dominated by
+  vendor content marketing and affiliate SEO: "best AI property management
+  software 2026", "the complete guide to AI in real estate", consultancy
+  market-size reports with CAGRs. All of it is auto-kill under the
+  rumor-pattern list, and none of its statistics may be quoted — including
+  market-size and "AVM median error rate" figures, which trace back to
+  research mills. Require a dated primary source (a GSE lender letter or
+  announcement, a regulator or agency document, a court filing, a company
+  press release or earnings call) or a bylined, dated article from
+  first-tier press or established trade press (Inman, HousingWire,
+  Multifamily Dive, National Mortgage News, The Real Deal, Bisnow, Sifted,
+  The Negotiator).
 
 Top Stories, Research & Models, Product & Industry, and Quick Hits carry
 the rest: product/model launches, research, security, community. Judgment
