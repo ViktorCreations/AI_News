@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[September 10, 2026](newsletters/2026-09-10.md)** — OpenAI puts Paul Christiano, who invented RLHF and then left to work on the risk it might not be enough, on the board committee that can block model releases.
+**[September 11, 2026](newsletters/2026-09-11.md)** — Anthropic names Chinese labs in a 200-million-exchange distillation report, with the largest campaign attributed to operators linked to Alibaba.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-09-11 | [Read](newsletters/2026-09-11.md) | Anthropic names Chinese labs in a 200-million-exchange distillation report |
 | 2026-09-10 | [Read](newsletters/2026-09-10.md) | OpenAI puts an alignment researcher on the committee that can block its releases |
 | 2026-09-09 | [Read](newsletters/2026-09-09.md) | OpenAI claims a Millennium Prize problem, and a priority fight breaks out around it |
 | 2026-09-08 | [Read](newsletters/2026-09-08.md) | Seven models got real bank accounts and most of them committed invoice fraud |
