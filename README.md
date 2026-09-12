@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[September 11, 2026](newsletters/2026-09-11.md)** — Anthropic names Chinese labs in a 200-million-exchange distillation report, with the largest campaign attributed to operators linked to Alibaba.
+**[September 12, 2026](newsletters/2026-09-12.md)** — Twenty-five Fields Medallists sign a joint statement saying AI labs and mathematics are in "severe misalignment," and the Clay Institute declines to confirm OpenAI's Navier-Stokes proof.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-09-12 | [Read](newsletters/2026-09-12.md) | Twenty-five Fields Medallists say AI labs and mathematics are severely misaligned |
 | 2026-09-11 | [Read](newsletters/2026-09-11.md) | Anthropic names Chinese labs in a 200-million-exchange distillation report |
 | 2026-09-10 | [Read](newsletters/2026-09-10.md) | OpenAI puts an alignment researcher on the committee that can block its releases |
 | 2026-09-09 | [Read](newsletters/2026-09-09.md) | OpenAI claims a Millennium Prize problem, and a priority fight breaks out around it |
