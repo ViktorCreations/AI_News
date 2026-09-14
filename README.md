@@ -7,14 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[September 14, 2026](newsletters/2026-09-14.md)** — Altman turns "pacing" into a policy ask — a uniform national safety framework, and don't wait for Congress — while TechCrunch asks why every lab found its conscience in the same fortnight.
+**[September 14, 2026](newsletters/2026-09-14.md)** — The slowdown consensus met its first real test and lost three times over: AI stocks sold off worldwide, Trump and the House Speaker rejected the idea outright, and Beijing called it fear mongering.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
-| 2026-09-14 | [Read](newsletters/2026-09-14.md) | Altman turns "pacing" into a policy ask, and draws its limits |
+| 2026-09-14 | [Read](newsletters/2026-09-14.md) | Markets, Washington and Beijing all answer the slowdown consensus |
 | 2026-09-13 | [Read](newsletters/2026-09-13.md) | Amodei sets out how to slow the frontier, and his rivals partly agree |
 | 2026-09-12 | [Read](newsletters/2026-09-12.md) | Twenty-five Fields Medallists say AI labs and mathematics are severely misaligned |
 | 2026-09-11 | [Read](newsletters/2026-09-11.md) | Anthropic names Chinese labs in a 200-million-exchange distillation report |
