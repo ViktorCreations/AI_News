@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[September 13, 2026](newsletters/2026-09-13.md)** — Amodei publishes a plan to slow the frontier, from embedded auditors to a treaty-level speed limit on recursive self-improvement, and Altman, Musk and Hassabis each back part of it.
+**[September 14, 2026](newsletters/2026-09-14.md)** — Altman turns "pacing" into a policy ask — a uniform national safety framework, and don't wait for Congress — while TechCrunch asks why every lab found its conscience in the same fortnight.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-09-14 | [Read](newsletters/2026-09-14.md) | Altman turns "pacing" into a policy ask, and draws its limits |
 | 2026-09-13 | [Read](newsletters/2026-09-13.md) | Amodei sets out how to slow the frontier, and his rivals partly agree |
 | 2026-09-12 | [Read](newsletters/2026-09-12.md) | Twenty-five Fields Medallists say AI labs and mathematics are severely misaligned |
 | 2026-09-11 | [Read](newsletters/2026-09-11.md) | Anthropic names Chinese labs in a 200-million-exchange distillation report |
