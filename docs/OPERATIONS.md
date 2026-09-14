@@ -59,6 +59,12 @@ Design invariants:
 - **Egress policy blocks non-MCP GitHub writes** (repo settings, branch
   renames → HTTP 403 from the proxy). Don't retry policy 403/407s; those
   operations belong to the user in the GitHub UI.
+- **Research 403s are a different thing entirely** and must not be confused
+  with the above. A site refusing the fetch tool is its own bot edge, not
+  the proxy — the tunnel succeeds (`HTTP/1.1 200 Connection Established`)
+  and `recentRelayFailures` stays empty. Those are worked around, via
+  `scripts/fetch.py` and the routes in `docs/SOURCES.md`. Only a failed
+  `CONNECT` is a policy denial to report.
 - **The repo is public** — raw URLs work unauthenticated, and nothing
   sensitive may be committed (Zoho creds live in `~/.zoho_mail_api`, outside
   the repo).

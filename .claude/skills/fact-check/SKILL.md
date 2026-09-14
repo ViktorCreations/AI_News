@@ -46,6 +46,20 @@ unverified claim.
   The Information). One SEO blog repeating a number is not confirmation.
 - For **papers/models**: fetch the arXiv page / model card and confirm it
   exists and says what the item claims.
+- **A 403 does not end the check.** Most sites that refuse the web-fetch tool
+  answer `python3 scripts/fetch.py <url>`, and several that refuse both
+  publish the same item on an open feed — `docs/SOURCES.md` has the table,
+  and the script names the route on a block. OpenAI in particular is only
+  readable via `openai.com/news/rss.xml`; check every claimed OpenAI launch
+  against it, since it gives the true date and instantly exposes both traps
+  this newsletter keeps meeting — a months-old post served as today's news,
+  and a launch that has not happened yet.
+- **Exhausting the routes is what makes a source unreachable.** If a story's
+  only source is one that cannot be read from here at all (Inman, SSRN,
+  x.com), it is unverified — corroborate it somewhere readable or drop it.
+  A route that yields only a headline, date and one-line description proves
+  the announcement happened and when; it does not license quoting from it,
+  describing its contents, or citing numbers out of it.
 
 ### 2. Source-quality check
 

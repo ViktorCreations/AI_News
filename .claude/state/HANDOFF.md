@@ -98,7 +98,18 @@ it is session-bound, a container reclaim orphans it — see `docs/OPERATIONS.md`
   up to $10B, nothing signed).
 - **Resolved discrepancy, for the record:** Dwelly raised £69M in February 2026
   *and* $170M in July 2026. These are two separate rounds, not a conflict.
-- Several sites return 403/402 to this container (openai.com, forbes.com,
-  cnbc.com, bbc.com, x.com, SSRN, HousingWire, Zillow newsroom). That is a bot
-  block, not a dead link — verify content via an accessible mirror, and only
-  link the blocked primary when its existence is independently confirmed.
+- **Source access: resolved 2026-09-14, see `docs/SOURCES.md`.** The old
+  "blocked list" (openai.com, forbes.com, cnbc.com, bbc.com, x.com, SSRN,
+  HousingWire, Zillow) was misleading: none of it is egress policy — every
+  host tunnels fine and `recentRelayFailures` is empty — and most of it is
+  now reachable. `scripts/fetch.py` fetches with curl (which several origins
+  allow where the web-fetch tool is refused) and knows the publisher-feed
+  route for the rest. Recovered: OpenAI (`openai.com/news/rss.xml`, full
+  archive), CNBC (`search.cnbc.com` XML), Zillow (`zillow.mediaroom.com`),
+  Forbes (section feeds), BBC (bbc.co.uk + `feeds.bbci.co.uk`), HousingWire
+  (curl direct). Genuinely unreachable: **Inman** (Cloudflare, every path —
+  it is on CLAUDE.md's approved trade-press list but cannot be read),
+  **SSRN** (use Crossref/OpenAlex for metadata), **x.com** (serves an empty
+  SPA shell, so a post is never verifiable), plus AP, Reuters, WSJ,
+  Bloomberg. A story sourced only to those is unverified — corroborate or
+  drop.

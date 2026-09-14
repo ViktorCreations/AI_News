@@ -9,7 +9,10 @@ commits the issue. If you are that session, follow the process below exactly.
 1. **Research the last 24 hours of AI news** using web search and web fetch.
    Cover these angles (run multiple searches — one angle won't find everything):
    - Major AI lab announcements: Anthropic, OpenAI, Google DeepMind, Meta AI,
-     Mistral, xAI, Hugging Face (check their blogs/newsrooms)
+     Mistral, xAI, Hugging Face (check their blogs/newsrooms). OpenAI's site
+     refuses the fetch tool — read `openai.com/news/rss.xml` instead, which
+     is also the fastest way to check whether a rumoured launch is real and
+     to get its true date.
    - Tech press: TechCrunch, VentureBeat, The Verge, Ars Technica, MIT Tech Review
    - Industry/business: funding rounds, acquisitions, chips (NVIDIA etc.),
      regulation and policy
@@ -154,9 +157,13 @@ than frontier AI and will not produce a story every day. Do not pad it.
   research mills. Require a dated primary source (a GSE lender letter or
   announcement, a regulator or agency document, a court filing, a company
   press release or earnings call) or a bylined, dated article from
-  first-tier press or established trade press (Inman, HousingWire,
-  Multifamily Dive, National Mortgage News, The Real Deal, Bisnow, Sifted,
-  The Negotiator).
+  first-tier press or established trade press (HousingWire, Multifamily
+  Dive, National Mortgage News, The Real Deal, Bisnow, Sifted, The
+  Negotiator, Inman). The first three are the reliable ones from here:
+  HousingWire needs `scripts/fetch.py` (it refuses the web-fetch tool), and
+  **Inman is unreachable from this container on every path** — being on
+  this list does not make an unverifiable story citable. See
+  `docs/SOURCES.md`.
 
 Top Stories, Research & Models, Product & Industry, and Quick Hits carry
 the rest: product/model launches, research, security, community. Judgment
@@ -208,6 +215,28 @@ date. Google had launched nothing. These rules exist so that never repeats.
 - **Prefer primary sources**: the company's own announcement/blog post, the
   paper, or the official press release; otherwise a dated article from a
   reputable outlet.
+- **A 403 is not a dead link, and not usually a policy block.** Most of the
+  sites that refuse the web-fetch tool answer plain curl, and several that
+  refuse both publish the same material on an open feed. Before dropping a
+  source, run `python3 scripts/fetch.py <url>`; on a block it names the
+  working route. The full table is `docs/SOURCES.md` — **read it before
+  concluding a source is unreachable**. Only a failed proxy `CONNECT` is a
+  real policy denial: report those, never route around them.
+- **Verifying via a route, citing the canonical URL.** When a page is
+  bot-blocked but its publisher's own feed or press room carries the same
+  item, verify against the route and still link the canonical page — but
+  only when the route is the *publisher's own* (openai.com/news/rss.xml for
+  an openai.com post, zillow.mediaroom.com for a Zillow report). A third
+  party's summary is not verification of someone else's page. If the route
+  gives only a headline, a date and a one-line description, that is enough
+  to confirm **that a thing was announced and when** — which satisfies the
+  primary-source test for launches — and not enough to quote from, describe
+  contents, or give numbers. For those, read the full text somewhere or
+  leave them out.
+- **Sources that cannot be reached at all** (currently Inman, SSRN, x.com —
+  see `docs/SOURCES.md`) do not become citable by being important. A story
+  whose only source is one of them is unverified: corroborate it somewhere
+  readable or drop it.
 
 ## Style rules
 
