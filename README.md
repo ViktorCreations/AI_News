@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[September 15, 2026](newsletters/2026-09-15.md)** — The slowdown argument hardened into two camps: Microsoft wrote down constraints that reject the race to general superintelligence, while Trump phoned Nvidia's CEO onstage to call the whole thing a hoax.
+**[September 16, 2026](newsletters/2026-09-16.md)** — Jensen Huang gave the anti-regulation case its fullest statement — safety is an engineering problem, not a legal one — while the practical answer to a month of agent incidents turned out to be hotlines where agents report each other.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-09-16 | [Read](newsletters/2026-09-16.md) | Huang's answer to the slowdown: no new laws, just don't ship it |
 | 2026-09-15 | [Read](newsletters/2026-09-15.md) | Microsoft writes down what its models may never do |
 | 2026-09-14 | [Read](newsletters/2026-09-14.md) | Markets, Washington and Beijing all answer the slowdown consensus |
 | 2026-09-13 | [Read](newsletters/2026-09-13.md) | Amodei sets out how to slow the frontier, and his rivals partly agree |
