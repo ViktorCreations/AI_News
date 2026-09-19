@@ -86,6 +86,13 @@ ROUTES = {
         "preprint's claims from its abstract page alone if you cannot read it.",
     ),
     "apnews.com": (None, "403 to both tools. No route found."),
+    "arstechnica.com": (
+        "https://arstechnica.com/feed/",
+        "Article pages started returning 403 on 2026-09-19; they answered 200 "
+        "before that. The feed still works and carries headline, link and "
+        "summary — enough to find a story and date it, not to write it from. "
+        "Source the article elsewhere.",
+    ),
     "wsj.com": (None, "403 + paywall. Not citable here."),
     "bloomberg.com": (None, "403 + paywall. Cite whoever reports on it."),
     "reuters.com": (None, "401 to both tools. Cite the outlet carrying the wire."),

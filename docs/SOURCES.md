@@ -53,7 +53,8 @@ challenge is a blanket edge rule and the feed is the front door.
 | **housingwire.com** | 200 to curl, **403 to WebFetch** | Fetch article URLs with `scripts/fetch.py`; scan the beat via `https://www.housingwire.com/feed/` |
 | multifamilydive.com | 200 | `https://www.multifamilydive.com/feeds/news/` |
 | nationalmortgagenews.com | 200 | `https://www.nationalmortgagenews.com/feed` |
-| techcrunch.com / the-decoder.com / theverge.com / arstechnica.com | 200 | `/feed/`, `/feed/`, `/rss/index.xml`, `/feed/` |
+| techcrunch.com / the-decoder.com / theverge.com | 200 | `/feed/`, `/feed/`, `/rss/index.xml` |
+| **arstechnica.com** | **403 on article pages as of 2026-09-19** (was 200) | `https://arstechnica.com/feed/` still answers and carries full headlines, links and summaries — enough to find a story, not to write one. Source the article elsewhere |
 
 ## Unreachable — no route found
 
