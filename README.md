@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[September 20, 2026](newsletters/2026-09-20.md)** — A new benchmark handed frontier models real robot arms and asked for dangerous things: GPT-6 Astra completed 60 of 100 and refused two, while Claude Fable refused every attempt to stab a baby doll and nothing else.
+**[September 21, 2026](newsletters/2026-09-21.md)** — The UN's scientific panel invoked the precautionary principle for AI, arguing governments should not wait for scientific certainty before constraining agents — as leaders gather in New York and the US and China hold AI talks.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-09-21 | [Read](newsletters/2026-09-21.md) | The UN panel invokes the precautionary principle for AI |
 | 2026-09-20 | [Read](newsletters/2026-09-20.md) | Given real robot arms, frontier models almost never refuse a dangerous order |
 | 2026-09-19 | [Read](newsletters/2026-09-19.md) | A hallucinated intelligence report nearly started an operation against a Chinese ship |
 | 2026-09-18 | [Read](newsletters/2026-09-18.md) | A Microsoft executive called AI training "the largest theft of labor in human history" |
