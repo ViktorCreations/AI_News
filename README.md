@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[September 21, 2026](newsletters/2026-09-21.md)** — The UN's scientific panel invoked the precautionary principle for AI, arguing governments should not wait for scientific certainty before constraining agents — as leaders gather in New York and the US and China hold AI talks.
+**[September 22, 2026](newsletters/2026-09-22.md)** — OpenAI answered the mathematicians with an advisory group barred from advising on pace, containing one of the 25 letter signatories — while claiming the same model has now resolved 100+ more open problems. Texas halted every data-center permit in the state.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-09-22 | [Read](newsletters/2026-09-22.md) | OpenAI gives mathematicians a voice, and withholds the one thing they asked for |
 | 2026-09-21 | [Read](newsletters/2026-09-21.md) | The UN panel invokes the precautionary principle for AI |
 | 2026-09-20 | [Read](newsletters/2026-09-20.md) | Given real robot arms, frontier models almost never refuse a dangerous order |
 | 2026-09-19 | [Read](newsletters/2026-09-19.md) | A hallucinated intelligence report nearly started an operation against a Chinese ship |
