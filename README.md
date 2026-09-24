@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[September 23, 2026](newsletters/2026-09-23.md)** — The two labs that spent this month arguing for a slowdown shipped new frontier models ninety minutes apart, both at roughly half the price of what they replace.
+**[September 24, 2026](newsletters/2026-09-24.md)** — Two lab CEOs asked the UN Security Council for international rules a day after the US president called exactly that a globalist scheme.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-09-24 | [Read](newsletters/2026-09-24.md) | A Pentagon review blames AI overreliance for a strike that killed 123 children |
 | 2026-09-23 | [Read](newsletters/2026-09-23.md) | Anthropic and OpenAI ship cheaper models 90 minutes apart, first releases since the slowdown call |
 | 2026-09-22 | [Read](newsletters/2026-09-22.md) | OpenAI gives mathematicians a voice, and withholds the one thing they asked for |
 | 2026-09-21 | [Read](newsletters/2026-09-21.md) | The UN panel invokes the precautionary principle for AI |
