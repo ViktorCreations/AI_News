@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[September 25, 2026](newsletters/2026-09-25.md)** — Reporting says Google, OpenAI and Anthropic are assembling their own frontier-AI regulator, and want it run by the adviser who ruled out building a government one.
+**[September 26, 2026](newsletters/2026-09-26.md)** — An appeals court ruled the Pentagon may keep Anthropic blacklisted for refusing to allow autonomous weapons and mass surveillance.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-09-26 | [Read](newsletters/2026-09-26.md) | An appeals court upholds the Pentagon's blacklisting of Anthropic over weapons and surveillance limits |
 | 2026-09-25 | [Read](newsletters/2026-09-25.md) | Google, OpenAI and Anthropic are said to be building their own frontier-AI regulator |
 | 2026-09-24 | [Read](newsletters/2026-09-24.md) | A Pentagon review blames AI overreliance for a strike that killed 123 children |
 | 2026-09-23 | [Read](newsletters/2026-09-23.md) | Anthropic and OpenAI ship cheaper models 90 minutes apart, first releases since the slowdown call |
