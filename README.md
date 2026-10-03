@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 2, 2026](newsletters/2026-10-02.md)** — Microsoft's 2026 Digital Defense Report says attackers are getting more out of AI than defenders right now, and the day's other news reads like its evidence base.
+**[October 3, 2026](newsletters/2026-10-03.md)** — Apple is rebuilding a macOS permission because of AI agents, and OpenAI has agreed to put a frontier model inside Synopsys's chip-design tools on a shared-revenue basis.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-03 | [Read](newsletters/2026-10-03.md) | Apple tightens macOS Full Disk Access because AI agents make the risk grow "substantially" |
 | 2026-10-02 | [Read](newsletters/2026-10-02.md) | Microsoft's Digital Defense Report: attackers are ahead of defenders in the early AI race |
 | 2026-10-01 | [Read](newsletters/2026-10-01.md) | The FTC opens a broad probe into OpenAI, Anthropic and the evaluator METR over agent incidents |
 | 2026-09-30 | [Read](newsletters/2026-09-30.md) | Six lab chiefs sign a voluntary self-audit accord at the White House; AI is renamed "Super Intelligence" |
