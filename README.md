@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 4, 2026](newsletters/2026-10-04.md)** — The man who wrote OpenAI's safety reports has resigned, saying the culture is broken and frontier labs need to run like nuclear power plants.
+**[October 5, 2026](newsletters/2026-10-05.md)** — Google froze its open-source bug bounty because the submissions are now overwhelmingly machine-generated and mostly invalid.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-05 | [Read](newsletters/2026-10-05.md) | Google freezes its open-source bug bounty over a flood of invalid AI-generated submissions |
 | 2026-10-04 | [Read](newsletters/2026-10-04.md) | OpenAI's safety-report author quits, says the culture is broken and labs need nuclear-grade safeguards |
 | 2026-10-03 | [Read](newsletters/2026-10-03.md) | Apple tightens macOS Full Disk Access because AI agents make the risk grow "substantially" |
 | 2026-10-02 | [Read](newsletters/2026-10-02.md) | Microsoft's Digital Defense Report: attackers are ahead of defenders in the early AI race |
