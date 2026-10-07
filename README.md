@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 6, 2026](newsletters/2026-10-06.md)** — OpenAI will invisibly watermark what ChatGPT writes for EU users under the AI Act, and keep the detector in the hands of approved researchers only.
+**[October 7, 2026](newsletters/2026-10-07.md)** — OpenAI published the mathematics it promised in September — 722 manuscripts from an unreleased model — through the channel and disclosures the mathematicians' advisory group asked for.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-07 | [Read](newsletters/2026-10-07.md) | OpenAI publishes 722 mathematics manuscripts from an unreleased model, on the advisory group's terms |
 | 2026-10-06 | [Read](newsletters/2026-10-06.md) | OpenAI starts watermarking ChatGPT and Codex text in the EU, with detector access restricted |
 | 2026-10-05 | [Read](newsletters/2026-10-05.md) | Google freezes its open-source bug bounty over a flood of invalid AI-generated submissions |
 | 2026-10-04 | [Read](newsletters/2026-10-04.md) | OpenAI's safety-report author quits, says the culture is broken and labs need nuclear-grade safeguards |
