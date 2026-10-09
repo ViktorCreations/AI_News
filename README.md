@@ -15,7 +15,7 @@ session that researches the last 24 hours of AI news and commits the issue here.
 |------|-------|-----------|
 <!-- archive -->
 | 2026-10-08 | [Read](newsletters/2026-10-08.md) | Google opens its SynthID AI-content detector to the public, covering OpenAI and Nvidia output too |
-| 2026-10-07 | [Read](newsletters/2026-10-07.md) | OpenAI publishes 722 mathematics manuscripts from an unreleased model, on the advisory group's terms |
+| 2026-10-07 | [Read](newsletters/2026-10-07.md) | OpenAI publishes 722 mathematics manuscripts from an unreleased model (corrected 9 Oct) |
 | 2026-10-06 | [Read](newsletters/2026-10-06.md) | OpenAI starts watermarking ChatGPT and Codex text in the EU, with detector access restricted |
 | 2026-10-05 | [Read](newsletters/2026-10-05.md) | Google freezes its open-source bug bounty over a flood of invalid AI-generated submissions |
 | 2026-10-04 | [Read](newsletters/2026-10-04.md) | OpenAI's safety-report author quits, says the culture is broken and labs need nuclear-grade safeguards |
