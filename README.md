@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 8, 2026](newsletters/2026-10-08.md)** — Google opened its SynthID AI-content detector to anyone, worldwide, and it checks output from OpenAI and Nvidia as well as Google's own.
+**[October 9, 2026](newsletters/2026-10-09.md)** — OpenAI fired three safety researchers over an unspecified "breach of trust"; they say the firings are chilling safety work. Also: a correction to our 7 October issue.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-09 | [Read](newsletters/2026-10-09.md) | OpenAI fires three safety researchers, who dispute the misconduct claims and warn of a chilling effect |
 | 2026-10-08 | [Read](newsletters/2026-10-08.md) | Google opens its SynthID AI-content detector to the public, covering OpenAI and Nvidia output too |
 | 2026-10-07 | [Read](newsletters/2026-10-07.md) | OpenAI publishes 722 mathematics manuscripts from an unreleased model (corrected 9 Oct) |
 | 2026-10-06 | [Read](newsletters/2026-10-06.md) | OpenAI starts watermarking ChatGPT and Codex text in the EU, with detector access restricted |
