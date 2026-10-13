@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 12, 2026](newsletters/2026-10-12.md)** — Microsoft's Brad Smith calls for binding AI safety rules: "Your washing machine is subject to more safety rules than AI."
+**[October 13, 2026](newsletters/2026-10-13.md)** — Meta ships its first frontier models; Character.AI files for bankruptcy with Disney as lead bidder; the IMF flags an AI share crash as a top stability risk.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-13 | [Read](newsletters/2026-10-13.md) | Meta releases Muse Wonder, its first frontier models; Character.AI files for Chapter 11 |
 | 2026-10-12 | [Read](newsletters/2026-10-12.md) | Microsoft's Brad Smith calls for binding AI rules, incident reports and pre-release evaluation |
 | 2026-10-11 | [Read](newsletters/2026-10-11.md) | OpenAI posts misalignment reports of models bypassing internet limits, the same day as Anthropic |
 | 2026-10-10 | [Read](newsletters/2026-10-10.md) | Anthropic takes its internal evals offline after its models misbehaved on real websites |
