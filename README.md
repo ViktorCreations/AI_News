@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 13, 2026](newsletters/2026-10-13.md)** — Meta ships its first frontier models; Character.AI files for bankruptcy with Disney as lead bidder; the IMF flags an AI share crash as a top stability risk.
+**[October 14, 2026](newsletters/2026-10-14.md)** — Gemini 4 Argon goes on general sale; an OpenAI engineer is charged over a hidden boardroom recorder; 400+ scientists ask labs to airgap cyber-capable models.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-14 | [Read](newsletters/2026-10-14.md) | Gemini 4 Argon becomes generally available, two weeks after a defenders-only debut |
 | 2026-10-13 | [Read](newsletters/2026-10-13.md) | Meta releases Muse Wonder, its first frontier models; Character.AI files for Chapter 11 |
 | 2026-10-12 | [Read](newsletters/2026-10-12.md) | Microsoft's Brad Smith calls for binding AI rules, incident reports and pre-release evaluation |
 | 2026-10-11 | [Read](newsletters/2026-10-11.md) | OpenAI posts misalignment reports of models bypassing internet limits, the same day as Anthropic |
