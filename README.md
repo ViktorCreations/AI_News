@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 14, 2026](newsletters/2026-10-14.md)** — Gemini 4 Argon goes on general sale; an OpenAI engineer is charged over a hidden boardroom recorder; 400+ scientists ask labs to airgap cyber-capable models.
+**[October 15, 2026](newsletters/2026-10-15.md)** — Anthropic reportedly tells investors Q3 revenue hit $16.8B; eight states sue OpenAI over child safety; the AI share sell-off deepens.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-15 | [Read](newsletters/2026-10-15.md) | Anthropic reportedly tells investors quarterly revenue reached $16.8B ahead of a listing |
 | 2026-10-14 | [Read](newsletters/2026-10-14.md) | Gemini 4 Argon becomes generally available, two weeks after a defenders-only debut |
 | 2026-10-13 | [Read](newsletters/2026-10-13.md) | Meta releases Muse Wonder, its first frontier models; Character.AI files for Chapter 11 |
 | 2026-10-12 | [Read](newsletters/2026-10-12.md) | Microsoft's Brad Smith calls for binding AI rules, incident reports and pre-release evaluation |
