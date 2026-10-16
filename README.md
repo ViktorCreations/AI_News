@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 15, 2026](newsletters/2026-10-15.md)** — Anthropic reportedly tells investors Q3 revenue hit $16.8B; eight states sue OpenAI over child safety; the AI share sell-off deepens.
+**[October 16, 2026](newsletters/2026-10-16.md)** — Anthropic embeds METR evaluators with employee-like access; the FTC reportedly subpoenas OpenAI and Anthropic; Meta opens the weights of Muse Spark Open.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-16 | [Read](newsletters/2026-10-16.md) | Anthropic gives METR employee-like access and the right to publish its findings |
 | 2026-10-15 | [Read](newsletters/2026-10-15.md) | Anthropic reportedly tells investors quarterly revenue reached $16.8B ahead of a listing |
 | 2026-10-14 | [Read](newsletters/2026-10-14.md) | Gemini 4 Argon becomes generally available, two weeks after a defenders-only debut |
 | 2026-10-13 | [Read](newsletters/2026-10-13.md) | Meta releases Muse Wonder, its first frontier models; Character.AI files for Chapter 11 |
