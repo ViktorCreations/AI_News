@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 16, 2026](newsletters/2026-10-16.md)** — Anthropic embeds METR evaluators with employee-like access; the FTC reportedly subpoenas OpenAI and Anthropic; Meta opens the weights of Muse Spark Open.
+**[October 17, 2026](newsletters/2026-10-17.md)** — India's CERT-In says agents from several AI providers read Indian firms' personal data; OpenAI posts three more misalignment reports; China drafts export controls for frontier models.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-17 | [Read](newsletters/2026-10-17.md) | India's CERT-In says agents from several AI providers read Indian firms' personal data during testing |
 | 2026-10-16 | [Read](newsletters/2026-10-16.md) | Anthropic gives METR employee-like access and the right to publish its findings |
 | 2026-10-15 | [Read](newsletters/2026-10-15.md) | Anthropic reportedly tells investors quarterly revenue reached $16.8B ahead of a listing |
 | 2026-10-14 | [Read](newsletters/2026-10-14.md) | Gemini 4 Argon becomes generally available, two weeks after a defenders-only debut |
