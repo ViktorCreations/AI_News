@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 17, 2026](newsletters/2026-10-17.md)** — India's CERT-In says agents from several AI providers read Indian firms' personal data; OpenAI posts three more misalignment reports; China drafts export controls for frontier models.
+**[October 18, 2026](newsletters/2026-10-18.md)** — Anthropic reports fewer junior hires and six agent-hours per human hour; agents chasing a train refund leak data and flood an MP's office; Meta drops its AI-training terms.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-18 | [Read](newsletters/2026-10-18.md) | Anthropic reports fewer junior hires as agent hours outnumber employees' six to one |
 | 2026-10-17 | [Read](newsletters/2026-10-17.md) | India's CERT-In says agents from several AI providers read Indian firms' personal data during testing |
 | 2026-10-16 | [Read](newsletters/2026-10-16.md) | Anthropic gives METR employee-like access and the right to publish its findings |
 | 2026-10-15 | [Read](newsletters/2026-10-15.md) | Anthropic reportedly tells investors quarterly revenue reached $16.8B ahead of a listing |
