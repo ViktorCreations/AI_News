@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 19, 2026](newsletters/2026-10-19.md)** — Anthropic commits 5% of its shares to a public benefit fund; Musk pledges SpaceX shares to American children; Microsoft quits Nscale's Essex data centre.
+**[October 20, 2026](newsletters/2026-10-20.md)** — The US orders DeepSeek out of federal civilian IT; Microsoft sells controls for rogue in-house agents; Tenstorrent raises $1.5B.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-20 | [Read](newsletters/2026-10-20.md) | DHS orders DeepSeek and products built on it removed from federal civilian IT |
 | 2026-10-19 | [Read](newsletters/2026-10-19.md) | Anthropic commits 5% of its shares to a public benefit fund that grows with its value |
 | 2026-10-18 | [Read](newsletters/2026-10-18.md) | Anthropic reports fewer junior hires as agent hours outnumber employees' six to one |
 | 2026-10-17 | [Read](newsletters/2026-10-17.md) | India's CERT-In says agents from several AI providers read Indian firms' personal data during testing |
