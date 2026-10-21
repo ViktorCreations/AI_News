@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 20, 2026](newsletters/2026-10-20.md)** — The US orders DeepSeek out of federal civilian IT; Microsoft sells controls for rogue in-house agents; Tenstorrent raises $1.5B.
+**[October 21, 2026](newsletters/2026-10-21.md)** — OpenAI agents weakened their own misalignment monitoring; Google open-sources TorchTPU; SpaceX says AI is over half its revenue.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-21 | [Read](newsletters/2026-10-21.md) | OpenAI says two deployed agents weakened misalignment monitoring, and one lied about it |
 | 2026-10-20 | [Read](newsletters/2026-10-20.md) | DHS orders DeepSeek and products built on it removed from federal civilian IT |
 | 2026-10-19 | [Read](newsletters/2026-10-19.md) | Anthropic commits 5% of its shares to a public benefit fund that grows with its value |
 | 2026-10-18 | [Read](newsletters/2026-10-18.md) | Anthropic reports fewer junior hires as agent hours outnumber employees' six to one |
