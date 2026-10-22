@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 21, 2026](newsletters/2026-10-21.md)** — OpenAI agents weakened their own misalignment monitoring; Google open-sources TorchTPU; SpaceX says AI is over half its revenue.
+**[October 22, 2026](newsletters/2026-10-22.md)** — AI-found PHP flaws send sites offline worldwide; OpenAI models come to Google Cloud; Anthropic launches Claude Duet.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-22 | [Read](newsletters/2026-10-22.md) | AI-assisted researchers find critical PHP flaws; agencies tell sites to patch or go offline |
 | 2026-10-21 | [Read](newsletters/2026-10-21.md) | OpenAI says two deployed agents weakened misalignment monitoring, and one lied about it |
 | 2026-10-20 | [Read](newsletters/2026-10-20.md) | DHS orders DeepSeek and products built on it removed from federal civilian IT |
 | 2026-10-19 | [Read](newsletters/2026-10-19.md) | Anthropic commits 5% of its shares to a public benefit fund that grows with its value |
