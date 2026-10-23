@@ -1,41 +1,49 @@
-# Session handoff — 2026-09-23 12:35 UTC
+# Session handoff — 2026-10-23 13:40 UTC
 
 ## Current task
-None in flight. Daily publishing is steady-state and current: an issue exists
-for every date 2026-07-18 through 2026-09-23 (68 issues), latest commit
-`3656cda`, working tree clean, pushed to both `main` and the session's
-designated branch.
+Done. The 2026-10-23 issue is published (commit `65d220c`, on `origin/main`
+and the session branch), README updated, and it was emailed via the ZohoMCP
+connector fallback (`mailDeliveryStatus` not returned; send call succeeded).
+An issue exists for every date 2026-07-18 through 2026-10-23 (98 issues).
+Next action: none until the scheduled run on 2026-10-24.
 
-**Publishing works. Email delivery does not, without manual fallback.** Still
-the single most important thing for a fresh session to know:
+**What happened today, so the next session recognises it:** the scheduled
+fire at 11:03 UTC started the run, but the container restarted mid-draft and
+left an uncommitted, truncated `newsletters/2026-10-23.md` (9 lines, cut off
+mid-word). A manual `resume` at ~13:00 UTC redid research, writing and
+fact-check from scratch, then published. The container restarted *again*
+right after the commit and push, before the email — the commit-before-email
+rule below is what saved the issue. **On resume, check `git status` for an
+untracked, half-written issue for today**: that is the signature of a run
+killed by a restart, and the fix is to finish the run, not to trust the
+fragment's content without re-verifying it.
+
+**Publishing works. Email delivery does not, without manual fallback.**
 
 - `~/.zoho_mail_api` does not exist and all six Zoho variables are unset, so
   `scripts/zoho_send.sh` fails on every run naming CLIENT_ID, CLIENT_SECRET,
-  ACCOUNT_ID, FROM_ADDRESS, TO_ADDRESS, REFRESH_TOKEN. It has failed on every
-  run since 2026-09-06.
-- Expect that failure. Fall back to the ZohoMCP connector:
-  `mcp__ZohoMCP__ZohoMail_sendEmail` (load via ToolSearch) with `accountId`
-  6087715000000008002, from the Zoho mailbox to the configured notification
-  email, body from `python3 scripts/md2email.py newsletters/YYYY-MM-DD.md`,
-  subject = the issue's H1. This has worked every day since 2026-09-03.
-- If neither path works: publish steps 1–6 anyway and say so plainly in the
-  run summary. Do not silently skip it.
+  ACCOUNT_ID, FROM_ADDRESS, TO_ADDRESS, REFRESH_TOKEN. Still true 2026-10-23.
+- Fall back to the ZohoMCP connector: `mcp__ZohoMCP__ZohoMail_sendEmail`
+  (load via ToolSearch) with `accountId` 6087715000000008002, from the Zoho
+  mailbox (`ZohoMail_getMailAccounts` gives it) to the configured
+  notification email, body from
+  `python3 scripts/md2email.py newsletters/YYYY-MM-DD.md`, subject = the
+  issue's H1. Worked again 2026-10-23.
+- If neither path works: publish steps 1–6 anyway and say so plainly.
 
-**Order of operations matters.** Commit and push BEFORE the email step. On
-2026-09-16 a container restart mid-run destroyed a finished, fact-checked
-issue that had not yet been committed, and it had to be rebuilt from context.
-Containers here restart most days — `cat /proc/uptime` frequently reads 0
-minutes at the start of a run.
+**Order of operations matters.** Commit and push BEFORE the email step.
+Containers here restart often — twice in one run on 2026-10-23, and on
+2026-09-16 a restart destroyed a finished, uncommitted issue.
 
-## Routine registry (live state, verified this session)
+## Routine registry (live state, verified 2026-10-23)
 | Name | Trigger ID | Cron (UTC) | Binding | Notifications | Prompt gist |
 |---|---|---|---|---|---|
-| Daily AI newsletter | `trig_013uwjDfce9Eu4RkFBEmFkfQ` | `0 11 * * *` (fires ~11:05–11:16) | session-bound to `session_01JHEXp6dpeg5hK3DQGdj4eK` | none | Run the CLAUDE.md daily process; research, select ~10 stories, write today's UTC issue, update README, commit `Newsletter: YYYY-MM-DD`, push to default branch, work autonomously, don't redo a published date, close with the top-3 paragraph |
+| Daily AI newsletter | `trig_013uwjDfce9Eu4RkFBEmFkfQ` | `0 11 * * *` (fires ~11:01–11:16) | session-bound to `session_01JHEXp6dpeg5hK3DQGdj4eK` | none | Run the CLAUDE.md daily process; research, select ~10 stories, write today's UTC issue, update README, commit `Newsletter: YYYY-MM-DD`, push to default branch, work autonomously, don't redo a published date, close with the top-3 paragraph |
 
-Enabled, no routine-level environment variables, no MCP connections attached.
-Last fired 2026-09-23T11:16:04Z (last_run SUCCEEDED); next 2026-09-24T11:14:56Z.
-Session-bound, so a container reclaim orphans it — see `docs/OPERATIONS.md` §1
-for the rebind procedure.
+Enabled, no MCP connections attached. Last fired 2026-10-23T11:03:45Z
+(last_run SUCCEEDED, which only means the wake was delivered, not that the
+run finished); next 2026-10-24T11:01:56Z. Session-bound, so a container
+reclaim orphans it; see `docs/OPERATIONS.md` §1 for the rebind procedure.
 
 ## Git topology — read before pushing
 The session runs on branch `claude/ai-news-daily-newsletter-b67lp0`, not
@@ -43,79 +51,64 @@ The session runs on branch `claude/ai-news-daily-newsletter-b67lp0`, not
 
 ```
 git push origin HEAD:main      # what readers see; CLAUDE.md step 6
-git push origin HEAD           # satisfies the stop hook, which counts
-                               # unpushed commits on the current branch
+git push -u origin HEAD        # the session branch; the stop hook counts it
 ```
 
-Local `main` drifts behind `origin/main` and has twice been left stranded
-(at 2026-09-11, then 2026-09-16), which makes a bare `git push -u origin main`
-fail as non-fast-forward. It was resynced to `3656cda` this session. If a push
-is rejected, fetch first and confirm `git merge-base --is-ancestor origin/main
-HEAD` before doing anything else; never force. GitHub also reports a
-server-side rule renaming pushes to that branch toward `main`, which is
-probably why the container keeps coming back on it.
+Before pushing: `git fetch origin main` and confirm
+`git merge-base --is-ancestor origin/main HEAD`; never force. Local `main`
+drifts; resync it with `git branch -f main HEAD` after a publish.
 
 ## Decisions & constraints in force
 - Repo is public: no secrets, tokens, or personal data in committed files.
-  Zoho OAuth credentials live outside git only.
-- The `fact-check` skill is mandatory before every publish. A story that fails
-  verification is dropped, never softened.
-- Prefer a fuller issue; on slow days widen the net before shortening, and
-  never pad. Six to eight well-sourced items is an acceptable issue.
-- Thematic sections are exclusive homes, and this binds even when it buries a
-  lead: intergovernmental or government action goes to Regulation & Policy
-  (the UN panel, Newsom, Abbott, von der Leyen all did), money-led to Capital
-  & Deals, physical buildout to Compute & Data Centers. Carry the story in the
-  editor's note instead. Section order follows the CLAUDE.md template — this
-  was got wrong once on 2026-09-23 and fixed pre-publish.
-- **AI in Real Estate** is the last section and outranks the other thematic
-  sections for property stories. 30-day window, explicit dates, `Context:`
-  labels allowed, hard sourcing bar against vendor SEO. Full rules in
-  CLAUDE.md.
-- Commit trailer is `Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>`
-  followed by the `Claude-Session:` line.
+- The `fact-check` skill is mandatory before every publish. A story that
+  fails verification is dropped, never softened.
+- Prefer a fuller issue (~12–15 items); on slow days widen the net before
+  shortening, and never pad.
+- Thematic sections are exclusive homes: government action → Regulation &
+  Policy, money-led → Capital & Deals, physical buildout → Compute & Data
+  Centers, property → AI in Real Estate (last section; outranks the others,
+  but data centres stay in Compute). Section order follows the CLAUDE.md
+  template.
+- Current house style (since mid-October): items are `**[Headline](link)**:
+  text` (colon, not em dash); Top Stories carry a paragraph, optional
+  bullets, and a closing paragraph. Copy the previous day's issue for shape.
+- Commit trailer: use the attribution lines from the session's system
+  reminder (currently `Co-Authored-By: Claude Opus 5.5 …` plus the
+  `Claude-Session:` line). Never put a model identifier anywhere else.
 - Do not create pull requests unless explicitly asked.
 - Process changes ship as commits to `CLAUDE.md`, not edits to the routine
   prompt.
 
 ## Recently changed
-- `scripts/fetch.py` + `docs/SOURCES.md` (`3ddd8ac`, updated `7725523`) — the
-  fetch helper and source-access map. Most "blocked" sources were origin bot
-  edges, not egress policy; the script routes around them without spoofing a
-  browser. Ars Technica article pages began 403ing on 2026-09-19 and are
-  recorded as feed-only.
-- `CLAUDE.md` + `.claude/skills/fact-check/SKILL.md` (`3ddd8ac`) — link rules
-  for bot-blocked sources, and what a feed-only route does and does not
-  license.
-- `newsletters/2026-09-14` … `2026-09-23` and `README.md` — daily issues.
+- `newsletters/2026-10-23.md` and `README.md` (`65d220c`): today's issue.
+- `.claude/state/HANDOFF.md`: this file, replacing the 2026-09-23 version
+  (a month stale; issues 09-24 through 10-22 were published without a
+  handoff refresh).
 
 ## Open questions / risks
 - **Open question the owner has not answered:** whether to change the AI in
   Real Estate floor from "two to four items" to "omit if nothing qualifies,
-  otherwise one to four." The section has now been omitted six days running
-  (2026-09-18 through 09-23) after two strong days before that. The beat is
-  real but genuinely intermittent. Until answered, do not pad it.
-- **Running threads worth continuing:** the pacing debate and what it has
-  actually changed (both labs shipped cheaper models 90 minutes apart on
-  09-22, Anthropic's with safety training described as broadly unchanged);
-  embedded evaluators (Anthropic's first is Accenture at $1B/5yr, not the
-  safety nonprofits); the Trump–Xi summit on 09-24 with AI safety on the
-  agenda; data-center permitting halts spreading across states (New York,
-  then Texas on 09-21); the mathematicians' objection versus OpenAI's
-  advisory group; Anthropic's IPO, reportedly pushed to November.
-- **Source hygiene that keeps mattering:** third-party page summaries from
-  search results are not verification — several items have been cut because
-  figures appeared only in a search snippet and not in any page read in full.
-  Feed-only routes confirm that a thing was announced and when, nothing more.
-- **Watch for source monoculture.** The 2026-09-20 issue went out with seven
-  of eight links from one outlet. Check the spread before publishing;
-  weekends are when it happens.
-- **Email deliverability is unverified.** Sends succeed and report
-  `mailDeliveryStatus: success`, but the owner asked on 09-16 whether an
-  issue had arrived. Worth confirming it is not being spam-filtered; the
-  Zoho domain has had no DKIM/SPF alignment work done from here.
-- **README markers are fragile.** An edit once removed `<!-- archive -->`.
-  Always `grep -c` both markers before committing.
-- Several sites return 403 to one client and 200 to another; `docs/SOURCES.md`
-  is the current map and `scripts/fetch.py --route <url>` answers per host.
-  Genuinely unreachable: Inman, SSRN, x.com, AP, Reuters, WSJ, Bloomberg.
+  otherwise one to four." Recent issues carry one item or none; do not pad.
+- **Source traps seen 2026-10-23:**
+  - Aggregator summaries got the CyberCartel/Straiker story backwards (they
+    said Claude refusals were rerouted to Kimi; Straiker's report says Kimi
+    refusals fell back to hard-coded local code). Read the primary.
+  - Primary sources that need routing: the Straiker report URL is only in
+    `straiker.ai/sitemap.xml`; Microsoft Security blog bodies don't render
+    to `scripts/fetch.py` (use WebFetch, it works); Anthropic posts are
+    findable via `anthropic.com/sitemap.xml`.
+  - canva.com newsroom 403s to both clients; Canva Craft was dropped for
+    lack of a readable company source. Worth adding to `docs/SOURCES.md`.
+- **Running threads:** AI-run cyberattacks (ARTEX: South Korean banks on
+  10-11, ConnectWise on 10-23; CyberCartel); PHP2Shell aftermath (top story
+  10-22); OpenAI's ~$30B round at $1.25T pre-money (reported, not closed);
+  Anthropic's IPO (S-1 rumoured "any day"); data-centre opposition (Finland,
+  UK SAIL taskforce); agents and bank logins.
+- **Source monoculture:** check the spread before publishing; weekends are
+  when it happens.
+- **Email deliverability is unverified** (sends succeed; whether they land
+  in the inbox or spam is unknown — the runbook says check the spam folder).
+- **README markers are fragile.** Always `grep -c` both markers before
+  committing.
+- Genuinely unreachable: Inman, SSRN, x.com, AP, Reuters, WSJ, Bloomberg,
+  Axios (403 to fetch.py), canva.com. `docs/SOURCES.md` is the map.
