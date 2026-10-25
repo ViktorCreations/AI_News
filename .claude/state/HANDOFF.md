@@ -1,13 +1,14 @@
-# Session handoff — 2026-10-23 13:40 UTC
+# Session handoff — 2026-10-25 00:25 UTC
 
 ## Current task
-Done. The 2026-10-23 issue is published (commit `65d220c`, on `origin/main`
+Done. The 2026-10-24 issue is published (commit `b0a6b8a`, on `origin/main`
 and the session branch), README updated, and it was emailed via the ZohoMCP
-connector fallback (`mailDeliveryStatus` not returned; send call succeeded).
-An issue exists for every date 2026-07-18 through 2026-10-23 (98 issues).
-Next action: none until the scheduled run on 2026-10-24.
+connector fallback (send call succeeded). An issue exists for every date
+2026-07-18 through 2026-10-24 (99 issues). The scheduled fire at
+2026-10-24T11:02Z ran end to end in this session. Next action: none until the
+scheduled run on 2026-10-25.
 
-**What happened today, so the next session recognises it:** the scheduled
+**What happened on 2026-10-23, so the next session recognises it:** the scheduled
 fire at 11:03 UTC started the run, but the container restarted mid-draft and
 left an uncommitted, truncated `newsletters/2026-10-23.md` (9 lines, cut off
 mid-word). A manual `resume` at ~13:00 UTC redid research, writing and
@@ -40,9 +41,9 @@ Containers here restart often — twice in one run on 2026-10-23, and on
 |---|---|---|---|---|---|
 | Daily AI newsletter | `trig_013uwjDfce9Eu4RkFBEmFkfQ` | `0 11 * * *` (fires ~11:01–11:16) | session-bound to `session_01JHEXp6dpeg5hK3DQGdj4eK` | none | Run the CLAUDE.md daily process; research, select ~10 stories, write today's UTC issue, update README, commit `Newsletter: YYYY-MM-DD`, push to default branch, work autonomously, don't redo a published date, close with the top-3 paragraph |
 
-Enabled, no MCP connections attached. Last fired 2026-10-23T11:03:45Z
+Enabled, no MCP connections attached. Last fired 2026-10-24T11:02:46Z
 (last_run SUCCEEDED, which only means the wake was delivered, not that the
-run finished); next 2026-10-24T11:01:56Z. Session-bound, so a container
+run finished). Session-bound, so a container
 reclaim orphans it; see `docs/OPERATIONS.md` §1 for the rebind procedure.
 
 ## Git topology — read before pushing
@@ -80,7 +81,8 @@ drifts; resync it with `git branch -f main HEAD` after a publish.
   prompt.
 
 ## Recently changed
-- `newsletters/2026-10-23.md` and `README.md` (`65d220c`): today's issue.
+- `newsletters/2026-10-24.md` and `README.md` (`b0a6b8a`): 24 October issue.
+- `newsletters/2026-10-23.md` and `README.md` (`65d220c`): 23 October issue.
 - `.claude/state/HANDOFF.md`: this file, replacing the 2026-09-23 version
   (a month stale; issues 09-24 through 10-22 were published without a
   handoff refresh).
@@ -97,6 +99,10 @@ drifts; resync it with `git branch -f main HEAD` after a publish.
     `straiker.ai/sitemap.xml`; Microsoft Security blog bodies don't render
     to `scripts/fetch.py` (use WebFetch, it works); Anthropic posts are
     findable via `anthropic.com/sitemap.xml`.
+  - Block's Dessa model (2026-10-23) was dropped: dessa.ai gives NO CONNECTION
+    and block.xyz/news has no trace of it.
+  - Kimi K3.1 Pro weights are promised by 4 November; check kimi.com/blog and
+    Hugging Face then (a genuine delta item if they land).
   - canva.com newsroom 403s to both clients; Canva Craft was dropped for
     lack of a readable company source. Worth adding to `docs/SOURCES.md`.
 - **Running threads:** AI-run cyberattacks (ARTEX: South Korean banks on
