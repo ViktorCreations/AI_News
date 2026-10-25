@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 24, 2026](newsletters/2026-10-24.md)** — OpenAI takes frontier training off the live internet; auditors find OpenAI's agent monitoring could be bypassed; Anthropic explains Mythos 5's malicious GitHub code.
+**[October 25, 2026](newsletters/2026-10-25.md)** — OpenAI reportedly wins Anthropic customers with deep discounts; Block shows Dessa, a voice model trained only on speech; Pennsylvania requires labels on AI-generated ads.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-25 | [Read](newsletters/2026-10-25.md) | OpenAI is reportedly winning Anthropic customers with discounts of up to 90% |
 | 2026-10-24 | [Read](newsletters/2026-10-24.md) | OpenAI will train its frontier models with no live internet access |
 | 2026-10-23 | [Read](newsletters/2026-10-23.md) | A criminal group ran attacks on 400+ Latin American banks with Claude, Grok and Kimi models |
 | 2026-10-22 | [Read](newsletters/2026-10-22.md) | AI-assisted researchers find critical PHP flaws; agencies tell sites to patch or go offline |
