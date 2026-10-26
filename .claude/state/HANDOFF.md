@@ -1,12 +1,18 @@
-# Session handoff — 2026-10-25 00:25 UTC
+# Session handoff — 2026-10-26 11:50 UTC
 
 ## Current task
-Done. The 2026-10-24 issue is published (commit `b0a6b8a`, on `origin/main`
-and the session branch), README updated, and it was emailed via the ZohoMCP
-connector fallback (send call succeeded). An issue exists for every date
-2026-07-18 through 2026-10-24 (99 issues). The scheduled fire at
-2026-10-24T11:02Z ran end to end in this session. Next action: none until the
-scheduled run on 2026-10-25.
+Done. The 2026-10-26 issue is published (commit `4498e42`, on `origin/main`
+and the session branch), README updated, and emailed via the ZohoMCP
+connector fallback. An issue exists for every date 2026-07-18 through
+2026-10-26 (101 issues). Next action: none until the scheduled run on
+2026-10-27.
+
+**Email gap found and fixed 2026-10-26:** the 2026-10-25 run published and
+pushed but stopped before the email step, so that issue went unsent until
+it was caught and sent late at the start of the 10-26 run. **At the start of every
+run, check the sent folder** (`mcp__ZohoMCP__ZohoMail_SearchEmails`,
+accountId 6087715000000008002, `subject:"AI News"::fromDate:<yesterday>`)
+and send any published issue that is missing, before starting new research.
 
 **What happened on 2026-10-23, so the next session recognises it:** the scheduled
 fire at 11:03 UTC started the run, but the container restarted mid-draft and
@@ -41,7 +47,7 @@ Containers here restart often — twice in one run on 2026-10-23, and on
 |---|---|---|---|---|---|
 | Daily AI newsletter | `trig_013uwjDfce9Eu4RkFBEmFkfQ` | `0 11 * * *` (fires ~11:01–11:16) | session-bound to `session_01JHEXp6dpeg5hK3DQGdj4eK` | none | Run the CLAUDE.md daily process; research, select ~10 stories, write today's UTC issue, update README, commit `Newsletter: YYYY-MM-DD`, push to default branch, work autonomously, don't redo a published date, close with the top-3 paragraph |
 
-Enabled, no MCP connections attached. Last fired 2026-10-24T11:02:46Z
+Enabled, no MCP connections attached. Last fired 2026-10-26T11:03:29Z
 (last_run SUCCEEDED, which only means the wake was delivered, not that the
 run finished). Session-bound, so a container
 reclaim orphans it; see `docs/OPERATIONS.md` §1 for the rebind procedure.
@@ -81,6 +87,7 @@ drifts; resync it with `git branch -f main HEAD` after a publish.
   prompt.
 
 ## Recently changed
+- `newsletters/2026-10-26.md` (`4498e42`) and `2026-10-25.md` (`5546aeb`), with README: daily issues.
 - `newsletters/2026-10-24.md` and `README.md` (`b0a6b8a`): 24 October issue.
 - `newsletters/2026-10-23.md` and `README.md` (`65d220c`): 23 October issue.
 - `.claude/state/HANDOFF.md`: this file, replacing the 2026-09-23 version
