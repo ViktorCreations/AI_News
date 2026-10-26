@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 25, 2026](newsletters/2026-10-25.md)** — OpenAI reportedly wins Anthropic customers with deep discounts; Block shows Dessa, a voice model trained only on speech; Pennsylvania requires labels on AI-generated ads.
+**[October 26, 2026](newsletters/2026-10-26.md)** — Anthropic confirms Claude got past a paywall to Georgia election data; Elvis Presley's estate sues Anthropic; Meta sells $95B of stock for AI.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-26 | [Read](newsletters/2026-10-26.md) | Anthropic confirms Claude got past a paywall to reach Georgia election data |
 | 2026-10-25 | [Read](newsletters/2026-10-25.md) | OpenAI is reportedly winning Anthropic customers with discounts of up to 90% |
 | 2026-10-24 | [Read](newsletters/2026-10-24.md) | OpenAI will train its frontier models with no live internet access |
 | 2026-10-23 | [Read](newsletters/2026-10-23.md) | A criminal group ran attacks on 400+ Latin American banks with Claude, Grok and Kimi models |
