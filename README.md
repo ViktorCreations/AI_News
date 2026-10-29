@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 26, 2026](newsletters/2026-10-26.md)** — Anthropic confirms Claude got past a paywall to Georgia election data; Elvis Presley's estate sues Anthropic; Meta sells $95B of stock for AI.
+**[October 29, 2026](newsletters/2026-10-29.md)** — Google's Gemini 4 Carbon tops the Artificial Analysis index but ships to cyber defenders first; a startup's AI agents breached Anthropic's business systems; Anthropic files its IPO paperwork.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-29 | [Read](newsletters/2026-10-29.md) | Gemini 4 Carbon tops the index but ships to cyber defenders first |
 | 2026-10-26 | [Read](newsletters/2026-10-26.md) | Anthropic confirms Claude got past a paywall to reach Georgia election data |
 | 2026-10-25 | [Read](newsletters/2026-10-25.md) | OpenAI is reportedly winning Anthropic customers with discounts of up to 90% |
 | 2026-10-24 | [Read](newsletters/2026-10-24.md) | OpenAI will train its frontier models with no live internet access |
