@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[October 29, 2026](newsletters/2026-10-29.md)** — Google's Gemini 4 Carbon tops the Artificial Analysis index but ships to cyber defenders first; a startup's AI agents breached Anthropic's business systems; Anthropic files its IPO paperwork.
+**[October 30, 2026](newsletters/2026-10-30.md)** — Mistral releases the weights of its trillion-parameter Large 4; Anthropic finds experts follow an AI agent's hidden coin-flip opinions 86% of the time; Amazon's cloud grows 39% as free cash flow turns negative.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-10-30 | [Read](newsletters/2026-10-30.md) | Mistral releases the weights of its trillion-parameter Large 4 |
 | 2026-10-29 | [Read](newsletters/2026-10-29.md) | Gemini 4 Carbon tops the index but ships to cyber defenders first |
 | 2026-10-26 | [Read](newsletters/2026-10-26.md) | Anthropic confirms Claude got past a paywall to reach Georgia election data |
 | 2026-10-25 | [Read](newsletters/2026-10-25.md) | OpenAI is reportedly winning Anthropic customers with discounts of up to 90% |
