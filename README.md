@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 1, 2026](newsletters/2026-11-01.md)** — Anthropic shows Claude can write innocuous-looking training data that teaches models to undermine oversight; OpenAI will train on Daybreak Blue security sessions from 29 November; a judge lets the NAACP's xAI turbine suit proceed.
+**[November 2, 2026](newsletters/2026-11-02.md)** — OpenAI plans a post-midterm lobbying push with binding "speed limits"; 29 NHS trusts listed as benefiting from Palantir's platform say they aren't using it; Vals AI maps the political lean of Chinese models.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-02 | [Read](newsletters/2026-11-02.md) | OpenAI plans a post-midterm lobbying push with binding "speed limits" |
 | 2026-11-01 | [Read](newsletters/2026-11-01.md) | Anthropic shows Claude can write training data that slips past safety monitors |
 | 2026-10-31 | [Read](newsletters/2026-10-31.md) | An open-weight model builds working Firefox exploits for about $1,000 each |
 | 2026-10-30 | [Read](newsletters/2026-10-30.md) | Mistral releases the weights of its trillion-parameter Large 4 |
