@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 2, 2026](newsletters/2026-11-02.md)** — OpenAI plans a post-midterm lobbying push with binding "speed limits"; 29 NHS trusts listed as benefiting from Palantir's platform say they aren't using it; Vals AI maps the political lean of Chinese models.
+**[November 3, 2026](newsletters/2026-11-03.md)** — Anthropic's revised IPO filing says it may "imminently" meet its own threshold for AI-accelerated AI progress; the UK's NCSC expects AI-powered malware against national infrastructure by 2028; Goldman Sachs pulls AI coding tools from non-engineers.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-03 | [Read](newsletters/2026-11-03.md) | Anthropic's revised IPO filing says it may "imminently" meet its own AI-accelerated-progress threshold |
 | 2026-11-02 | [Read](newsletters/2026-11-02.md) | OpenAI plans a post-midterm lobbying push with binding "speed limits" |
 | 2026-11-01 | [Read](newsletters/2026-11-01.md) | Anthropic shows Claude can write training data that slips past safety monitors |
 | 2026-10-31 | [Read](newsletters/2026-10-31.md) | An open-weight model builds working Firefox exploits for about $1,000 each |
