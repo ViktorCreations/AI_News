@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 3, 2026](newsletters/2026-11-03.md)** — Anthropic's revised IPO filing says it may "imminently" meet its own threshold for AI-accelerated AI progress; the UK's NCSC expects AI-powered malware against national infrastructure by 2028; Goldman Sachs pulls AI coding tools from non-engineers.
+**[November 4, 2026](newsletters/2026-11-04.md)** — Binance says hackers used fake job interviews and an internal AI tool in the $6.3B heist; OpenAI says GPT-6 Astra designed a hardware device in under a week; Anthropic publishes FlashProve to verify which model produced an output.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-04 | [Read](newsletters/2026-11-04.md) | Binance says hackers used fake job interviews and an internal AI tool in the $6.3B heist |
 | 2026-11-03 | [Read](newsletters/2026-11-03.md) | Anthropic's revised IPO filing says it may "imminently" meet its own AI-accelerated-progress threshold |
 | 2026-11-02 | [Read](newsletters/2026-11-02.md) | OpenAI plans a post-midterm lobbying push with binding "speed limits" |
 | 2026-11-01 | [Read](newsletters/2026-11-01.md) | Anthropic shows Claude can write training data that slips past safety monitors |
