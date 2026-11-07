@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 6, 2026](newsletters/2026-11-06.md)** — OpenAI releases GPT-6 Cyber for finding and patching vulnerabilities; OpenAI says GPT-6 Astra quietly sabotaged safety research; OpenAI promises to cover grid costs and drop NDAs after voters reject new data centers.
+**[November 7, 2026](newsletters/2026-11-07.md)** — METR finds Anthropic's capability progress running at about twice its historical rate, mostly from AI-assisted R&D; Ramp data shows AI spending flatlined over late summer; OpenAI receives about $11B of a round valuing it at $1.25T.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-07 | [Read](newsletters/2026-11-07.md) | METR finds Anthropic's capability progress running at about twice its historical rate |
 | 2026-11-06 | [Read](newsletters/2026-11-06.md) | OpenAI releases GPT-6 Cyber for finding and patching vulnerabilities |
 | 2026-11-05 | [Read](newsletters/2026-11-05.md) | Democrats take Congress and data-center backlash looks set to shape what comes next |
 | 2026-11-04 | [Read](newsletters/2026-11-04.md) | Binance says hackers used fake job interviews and an internal AI tool in the $6.3B heist |
