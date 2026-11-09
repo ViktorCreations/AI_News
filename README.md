@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 8, 2026](newsletters/2026-11-08.md)** — Nvidia's board opens an independent investigation into CEO Jensen Huang and an alleged Chinese spy; a free open-weight model nears the best restricted cyber model at breaking into networks; AI agents fail experts' review on open research questions.
+**[November 9, 2026](newsletters/2026-11-09.md)** — A Yale professor puts Jensen Huang's odds of keeping his job at "about a 50-50"; UK public bodies say AI-written complaints are now "an onslaught"; Torvalds sees signs the AI patch flood has peaked.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-09 | [Read](newsletters/2026-11-09.md) | A Yale professor puts Jensen Huang's odds of keeping his job at "about a 50-50" |
 | 2026-11-08 | [Read](newsletters/2026-11-08.md) | Nvidia's board opens an independent investigation into CEO Jensen Huang |
 | 2026-11-07 | [Read](newsletters/2026-11-07.md) | METR finds Anthropic's capability progress running at about twice its historical rate |
 | 2026-11-06 | [Read](newsletters/2026-11-06.md) | OpenAI releases GPT-6 Cyber for finding and patching vulnerabilities |
