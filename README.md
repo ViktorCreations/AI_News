@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 7, 2026](newsletters/2026-11-07.md)** — METR finds Anthropic's capability progress running at about twice its historical rate, mostly from AI-assisted R&D; Ramp data shows AI spending flatlined over late summer; OpenAI receives about $11B of a round valuing it at $1.25T.
+**[November 8, 2026](newsletters/2026-11-08.md)** — Nvidia's board opens an independent investigation into CEO Jensen Huang and an alleged Chinese spy; a free open-weight model nears the best restricted cyber model at breaking into networks; AI agents fail experts' review on open research questions.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-08 | [Read](newsletters/2026-11-08.md) | Nvidia's board opens an independent investigation into CEO Jensen Huang |
 | 2026-11-07 | [Read](newsletters/2026-11-07.md) | METR finds Anthropic's capability progress running at about twice its historical rate |
 | 2026-11-06 | [Read](newsletters/2026-11-06.md) | OpenAI releases GPT-6 Cyber for finding and patching vulnerabilities |
 | 2026-11-05 | [Read](newsletters/2026-11-05.md) | Democrats take Congress and data-center backlash looks set to shape what comes next |
