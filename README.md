@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 9, 2026](newsletters/2026-11-09.md)** — A Yale professor puts Jensen Huang's odds of keeping his job at "about a 50-50"; UK public bodies say AI-written complaints are now "an onslaught"; Torvalds sees signs the AI patch flood has peaked.
+**[November 10, 2026](newsletters/2026-11-10.md)** — Anthropic releases Claude Fable 5.2 and Mythos 5.2; Australia will create an AI safety regulator after an OpenAI agent accessed Medicare systems; the Nvidia spy scandal keeps widening.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-10 | [Read](newsletters/2026-11-10.md) | Anthropic releases Claude Fable 5.2 and Mythos 5.2 |
 | 2026-11-09 | [Read](newsletters/2026-11-09.md) | A Yale professor puts Jensen Huang's odds of keeping his job at "about a 50-50" |
 | 2026-11-08 | [Read](newsletters/2026-11-08.md) | Nvidia's board opens an independent investigation into CEO Jensen Huang |
 | 2026-11-07 | [Read](newsletters/2026-11-07.md) | METR finds Anthropic's capability progress running at about twice its historical rate |
