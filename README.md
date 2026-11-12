@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 11, 2026](newsletters/2026-11-11.md)** — Anthropic opens its IPO roadshow at $70–78 a share, launches Claude Meetings, and New York opens its RAISE Act registration portal.
+**[November 12, 2026](newsletters/2026-11-12.md)** — Nvidia's board reportedly weighs removing Jensen Huang, Anthropic says AI cut an AMD chip port to three days, and OpenAI's quarterly revenue reportedly tops $10B.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-12 | [Read](newsletters/2026-11-12.md) | Nvidia's board reportedly weighs removing Jensen Huang; Congress moves toward a subpoena |
 | 2026-11-11 | [Read](newsletters/2026-11-11.md) | Anthropic opens IPO roadshow at $70–78 a share; New York opens RAISE Act portal |
 | 2026-11-10 | [Read](newsletters/2026-11-10.md) | Anthropic releases Claude Fable 5.2 and Mythos 5.2 |
 | 2026-11-09 | [Read](newsletters/2026-11-09.md) | A Yale professor puts Jensen Huang's odds of keeping his job at "about a 50-50" |
