@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 12, 2026](newsletters/2026-11-12.md)** — Nvidia's board reportedly weighs removing Jensen Huang, Anthropic says AI cut an AMD chip port to three days, and OpenAI's quarterly revenue reportedly tops $10B.
+**[November 13, 2026](newsletters/2026-11-13.md)** — Jensen Huang resigns as Nvidia CEO, a global Microsoft outage hits email and Copilot, and Google releases Gemini 4 Hydrogen.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-13 | [Read](newsletters/2026-11-13.md) | Jensen Huang resigns as Nvidia CEO; Kress named interim |
 | 2026-11-12 | [Read](newsletters/2026-11-12.md) | Nvidia's board reportedly weighs removing Jensen Huang; Congress moves toward a subpoena |
 | 2026-11-11 | [Read](newsletters/2026-11-11.md) | Anthropic opens IPO roadshow at $70–78 a share; New York opens RAISE Act portal |
 | 2026-11-10 | [Read](newsletters/2026-11-10.md) | Anthropic releases Claude Fable 5.2 and Mythos 5.2 |
