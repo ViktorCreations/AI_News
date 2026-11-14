@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 13, 2026](newsletters/2026-11-13.md)** — Jensen Huang resigns as Nvidia CEO, a global Microsoft outage hits email and Copilot, and Google releases Gemini 4 Hydrogen.
+**[November 14, 2026](newsletters/2026-11-14.md)** — Nvidia scandal puts Commerce Secretary Lutnick under fire, OpenAI launches ChatGPT Wallet, and Anthropic's IPO is reportedly six times oversubscribed.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-14 | [Read](newsletters/2026-11-14.md) | Nvidia scandal puts Commerce Secretary Lutnick under pressure; ChatGPT Wallet launches |
 | 2026-11-13 | [Read](newsletters/2026-11-13.md) | Jensen Huang resigns as Nvidia CEO; Kress named interim |
 | 2026-11-12 | [Read](newsletters/2026-11-12.md) | Nvidia's board reportedly weighs removing Jensen Huang; Congress moves toward a subpoena |
 | 2026-11-11 | [Read](newsletters/2026-11-11.md) | Anthropic opens IPO roadshow at $70–78 a share; New York opens RAISE Act portal |
