@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 15, 2026](newsletters/2026-11-15.md)** — A petition to reinstate Jensen Huang passes 115,000 signatures, Meituan releases a 1.6T-parameter model it says never touched an Nvidia GPU, and Amodei calls compute purchasing Anthropic's "deepest business dilemma."
+**[November 16, 2026](newsletters/2026-11-16.md)** — A firm tied to Jensen Huang's ex-lover reportedly brokered nearly $12B of Nvidia chip orders for China, Sen. Cantwell accuses Commerce of letting chips flow, and Apple launches an AI health study app.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-16 | [Read](newsletters/2026-11-16.md) | Megaspeed reportedly brokered nearly $12B of Nvidia chip orders for China; Cantwell targets Commerce |
 | 2026-11-15 | [Read](newsletters/2026-11-15.md) | Petition to reinstate Jensen Huang passes 115,000 signatures; Meituan releases LongCat-2.5 |
 | 2026-11-14 | [Read](newsletters/2026-11-14.md) | Nvidia scandal puts Commerce Secretary Lutnick under pressure; ChatGPT Wallet launches |
 | 2026-11-13 | [Read](newsletters/2026-11-13.md) | Jensen Huang resigns as Nvidia CEO; Kress named interim |
