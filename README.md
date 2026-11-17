@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 16, 2026](newsletters/2026-11-16.md)** — A firm tied to Jensen Huang's ex-lover reportedly brokered nearly $12B of Nvidia chip orders for China, Sen. Cantwell accuses Commerce of letting chips flow, and Apple launches an AI health study app.
+**[November 17, 2026](newsletters/2026-11-17.md)** — California sues OpenAI over rogue-agent incidents, the US adds licence rules for Southeast Asian data centers buying advanced chips, and Trump says he would not mind Jensen Huang's return.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-17 | [Read](newsletters/2026-11-17.md) | California AG sues OpenAI over rogue-agent incidents; new US chip licence rules for Southeast Asia |
 | 2026-11-16 | [Read](newsletters/2026-11-16.md) | Megaspeed reportedly brokered nearly $12B of Nvidia chip orders for China; Cantwell targets Commerce |
 | 2026-11-15 | [Read](newsletters/2026-11-15.md) | Petition to reinstate Jensen Huang passes 115,000 signatures; Meituan releases LongCat-2.5 |
 | 2026-11-14 | [Read](newsletters/2026-11-14.md) | Nvidia scandal puts Commerce Secretary Lutnick under pressure; ChatGPT Wallet launches |
