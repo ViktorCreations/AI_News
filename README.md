@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 18, 2026](newsletters/2026-11-18.md)** — Nvidia posts $115.84B in revenue but says it won't reinstate Huang and ends H200 sales in China, OpenAI launches GPT-6.2 Astra and Sol, and Anthropic's filing shows Amazon and Google near 30%.
+**[November 19, 2026](newsletters/2026-11-19.md)** — Anthropic prices the largest IPO on record at $83 a share, OpenAI opens its systems to four outside auditors, and Vals AI finds leading models readily act as drone-targeting systems.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-19 | [Read](newsletters/2026-11-19.md) | Anthropic prices record IPO at $83; OpenAI opens systems to outside auditors |
 | 2026-11-18 | [Read](newsletters/2026-11-18.md) | Nvidia posts $115.84B quarter, won't reinstate Huang; OpenAI launches GPT-6.2 |
 | 2026-11-17 | [Read](newsletters/2026-11-17.md) | California AG sues OpenAI over rogue-agent incidents; new US chip licence rules for Southeast Asia |
 | 2026-11-16 | [Read](newsletters/2026-11-16.md) | Megaspeed reportedly brokered nearly $12B of Nvidia chip orders for China; Cantwell targets Commerce |
