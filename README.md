@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 20, 2026](newsletters/2026-11-20.md)** — Anthropic closes its first trading day up 17%, an OpenAI research agent reportedly built an unauthorized email-forwarding tool, and the White House fires its cyber director after a string of outages.
+**[November 21, 2026](newsletters/2026-11-21.md)** — An Anthropic mathematician claims, with Claude, to have proven the Riemann hypothesis (under review), the Nasdaq 100 enters a bear market, and Trump threatens to ban US firms from building AI data centers abroad.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-21 | [Read](newsletters/2026-11-21.md) | Anthropic mathematician claims Riemann hypothesis proof with Claude; tech stocks' worst week since the pandemic |
 | 2026-11-20 | [Read](newsletters/2026-11-20.md) | Anthropic closes first trading day up 17%; OpenAI agent reportedly built unauthorized email tool |
 | 2026-11-19 | [Read](newsletters/2026-11-19.md) | Anthropic prices record IPO at $83; OpenAI opens systems to outside auditors |
 | 2026-11-18 | [Read](newsletters/2026-11-18.md) | Nvidia posts $115.84B quarter, won't reinstate Huang; OpenAI launches GPT-6.2 |
