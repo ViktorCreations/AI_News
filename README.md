@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 23, 2026](newsletters/2026-11-23.md)** — OpenAI's chief scientist proposes perplexity as a shared speed limit for AI development, METR warns testing is falling behind capabilities, and Dragos finds cheap inference providers stealing credentials.
+**[November 24, 2026](newsletters/2026-11-24.md)** — Nvidia reinstates Jensen Huang less than two weeks after he resigned, Commerce moves to blacklist Megaspeed, and Anthropic launches Claude Ship with agents that can approve code changes.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-24 | [Read](newsletters/2026-11-24.md) | Nvidia reinstates Jensen Huang; Commerce moves to blacklist Megaspeed |
 | 2026-11-23 | [Read](newsletters/2026-11-23.md) | OpenAI's chief scientist proposes perplexity as an AI speed limit; METR warns testing lags |
 | 2026-11-22 | [Read](newsletters/2026-11-22.md) | Lean groups verify Claude-assisted Riemann proof; UN autonomous-weapons talks collapse |
 | 2026-11-21 | [Read](newsletters/2026-11-21.md) | Anthropic mathematician claims Riemann hypothesis proof with Claude; tech stocks' worst week since the pandemic |
