@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 24, 2026](newsletters/2026-11-24.md)** — Nvidia reinstates Jensen Huang less than two weeks after he resigned, Commerce moves to blacklist Megaspeed, and Anthropic launches Claude Ship with agents that can approve code changes.
+**[November 25, 2026](newsletters/2026-11-25.md)** — Axios reports staff at Anthropic and OpenAI think unreleased models may be too powerful to release safely, Anthropic's stock slips below its IPO price, and the Riemann proof's author admits rollout mistakes.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-25 | [Read](newsletters/2026-11-25.md) | Insiders say Anthropic and OpenAI's unreleased models may be too powerful to release; Anthropic falls below IPO price |
 | 2026-11-24 | [Read](newsletters/2026-11-24.md) | Nvidia reinstates Jensen Huang; Commerce moves to blacklist Megaspeed |
 | 2026-11-23 | [Read](newsletters/2026-11-23.md) | OpenAI's chief scientist proposes perplexity as an AI speed limit; METR warns testing lags |
 | 2026-11-22 | [Read](newsletters/2026-11-22.md) | Lean groups verify Claude-assisted Riemann proof; UN autonomous-weapons talks collapse |
