@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 25, 2026](newsletters/2026-11-25.md)** — Axios reports staff at Anthropic and OpenAI think unreleased models may be too powerful to release safely, Anthropic's stock slips below its IPO price, and the Riemann proof's author admits rollout mistakes.
+**[November 26, 2026](newsletters/2026-11-26.md)** — 42 state attorneys general move to block the sale of Character.AI's private chats, New York bans AI-powered toys for five years, and the FCC approves SpaceX's million-satellite space data-center plan.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-26 | [Read](newsletters/2026-11-26.md) | 42 state AGs move to stop Character.AI chat sale; New York bans AI toys for five years |
 | 2026-11-25 | [Read](newsletters/2026-11-25.md) | Insiders say Anthropic and OpenAI's unreleased models may be too powerful to release; Anthropic falls below IPO price |
 | 2026-11-24 | [Read](newsletters/2026-11-24.md) | Nvidia reinstates Jensen Huang; Commerce moves to blacklist Megaspeed |
 | 2026-11-23 | [Read](newsletters/2026-11-23.md) | OpenAI's chief scientist proposes perplexity as an AI speed limit; METR warns testing lags |
