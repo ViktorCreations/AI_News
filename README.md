@@ -7,13 +7,14 @@ session that researches the last 24 hours of AI news and commits the issue here.
 ## Latest issue
 
 <!-- latest -->
-**[November 26, 2026](newsletters/2026-11-26.md)** — 42 state attorneys general move to block the sale of Character.AI's private chats, New York bans AI-powered toys for five years, and the FCC approves SpaceX's million-satellite space data-center plan.
+**[November 27, 2026](newsletters/2026-11-27.md)** — Nvidia reportedly pauses server shipments to four Southeast Asian countries, Microsoft details state-backed hackers' use of the ARTEX framework, and an investigation finds undisclosed AI use in dozens of UK court cases.
 
 ## Archive
 
 | Date | Issue | Top story |
 |------|-------|-----------|
 <!-- archive -->
+| 2026-11-27 | [Read](newsletters/2026-11-27.md) | Nvidia reportedly pauses server shipments to Southeast Asia; Microsoft details ARTEX-driven attacks |
 | 2026-11-26 | [Read](newsletters/2026-11-26.md) | 42 state AGs move to stop Character.AI chat sale; New York bans AI toys for five years |
 | 2026-11-25 | [Read](newsletters/2026-11-25.md) | Insiders say Anthropic and OpenAI's unreleased models may be too powerful to release; Anthropic falls below IPO price |
 | 2026-11-24 | [Read](newsletters/2026-11-24.md) | Nvidia reinstates Jensen Huang; Commerce moves to blacklist Megaspeed |
